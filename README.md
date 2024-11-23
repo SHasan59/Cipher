@@ -1,6 +1,7 @@
 # Cipher 
-<img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg"/><img src="https://m3-markdown-badges.vercel.app/issues/7/2/SHasan59/CTPproject"><img src="https://m3-markdown-badges.vercel.app/stars/5/2/SHasan59/CTPproject">
-
+<img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg"/> &nbsp;
+<img src="https://m3-markdown-badges.vercel.app/issues/7/2/SHasan59/CTPproject"/> &nbsp;
+<img src="https://m3-markdown-badges.vercel.app/stars/5/2/SHasan59/CTPproject"/>
 ## Overview  
 **Cipher** is a cutting-edge data science project leveraging machine learning to detect anomalies in network traffic. By identifying unusual patterns, the model can proactively prevent Distributed Denial of Service (DDoS) attacks, ensuring network security and resilience.  
 
