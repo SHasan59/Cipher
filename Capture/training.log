@@ -1,0 +1,1406 @@
+2024-11-22 13:42:44,554 - INFO - Starting model training process...
+2024-11-22 13:42:44,554 - INFO - Loading dataset...
+2024-11-22 13:42:45,213 - INFO - Dataset shape: (225745, 79)
+2024-11-22 13:42:45,224 - INFO - Class distribution:
+ Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-22 13:42:45,300 - INFO - Features with missing values:
+Flow Bytes/s       34
+ Flow Packets/s    34
+dtype: int64
+2024-11-22 13:42:45,424 - INFO - Starting hyperparameter search...
+2024-11-22 13:47:06,739 - INFO - Starting model training process...
+2024-11-22 13:47:06,739 - INFO - Loading dataset...
+2024-11-22 13:47:07,334 - INFO - Dataset shape: (225745, 79)
+2024-11-22 13:47:07,343 - INFO - Class distribution:
+ Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-22 13:47:07,416 - INFO - Features with missing values:
+Flow Bytes/s       34
+ Flow Packets/s    34
+dtype: int64
+2024-11-22 13:47:07,534 - INFO - 
+Applying variance thresholding with threshold 0.01
+2024-11-22 13:47:07,535 - INFO - Original number of features: 78
+2024-11-22 13:47:07,571 - INFO - 
+Feature variances:
+2024-11-22 13:47:07,571 - INFO -  Destination Port: 390258674.3683131
+2024-11-22 13:47:07,571 - INFO -  Flow Duration: 993714405749891.4
+2024-11-22 13:47:07,571 - INFO -  Total Fwd Packets: 249.4684093028581
+2024-11-22 13:47:07,571 - INFO -  Total Backward Packets: 494.8167023432056
+2024-11-22 13:47:07,571 - INFO - Total Length of Fwd Packets: 10332271.211744042
+2024-11-22 13:47:07,571 - INFO -  Total Length of Bwd Packets: 1633725978.8570242
+2024-11-22 13:47:07,571 - INFO -  Fwd Packet Length Max: 3464788.377959907
+2024-11-22 13:47:07,571 - INFO -  Fwd Packet Length Min: 26839.74989473053
+2024-11-22 13:47:07,571 - INFO -  Fwd Packet Length Mean: 254846.0891343328
+2024-11-22 13:47:07,571 - INFO -  Fwd Packet Length Std: 633638.8960934001
+2024-11-22 13:47:07,571 - INFO - Bwd Packet Length Max: 13742460.61005701
+2024-11-22 13:47:07,571 - INFO -  Bwd Packet Length Min: 2551.335977988233
+2024-11-22 13:47:07,571 - INFO -  Bwd Packet Length Mean: 1255940.3722666118
+2024-11-22 13:47:07,571 - INFO -  Bwd Packet Length Std: 3008645.7994750417
+2024-11-22 13:47:07,571 - INFO - Flow Bytes/s: 279528817652509.28
+2024-11-22 13:47:07,571 - INFO -  Flow Packets/s: 13322001849.949106
+2024-11-22 13:47:07,571 - INFO -  Flow IAT Mean: 7330221041394.244
+2024-11-22 13:47:07,571 - INFO -  Flow IAT Std: 58180458722306.02
+2024-11-22 13:47:07,571 - INFO -  Flow IAT Max: 714153682424075.4
+2024-11-22 13:47:07,571 - INFO -  Flow IAT Min: 618755971698.4794
+2024-11-22 13:47:07,571 - INFO - Fwd IAT Total: 999187937225582.2
+2024-11-22 13:47:07,571 - INFO -  Fwd IAT Mean: 35083055794901.473
+2024-11-22 13:47:07,571 - INFO -  Fwd IAT Std: 116472024897906.92
+2024-11-22 13:47:07,571 - INFO -  Fwd IAT Max: 756741663186248.5
+2024-11-22 13:47:07,571 - INFO -  Fwd IAT Min: 14258001760147.38
+2024-11-22 13:47:07,571 - INFO - Bwd IAT Total: 481384965770228.75
+2024-11-22 13:47:07,571 - INFO -  Bwd IAT Mean: 20827613264920.695
+2024-11-22 13:47:07,571 - INFO -  Bwd IAT Std: 29979229923408.137
+2024-11-22 13:47:07,571 - INFO -  Bwd IAT Max: 261323311136394.16
+2024-11-22 13:47:07,571 - INFO -  Bwd IAT Min: 15932419873981.246
+2024-11-22 13:47:07,571 - INFO - Fwd PSH Flags: 0.032274767594053295
+2024-11-22 13:47:07,571 - INFO -  Bwd PSH Flags: 0.0
+2024-11-22 13:47:07,571 - INFO -  Fwd URG Flags: 0.0
+2024-11-22 13:47:07,571 - INFO -  Bwd URG Flags: 0.0
+2024-11-22 13:47:07,571 - INFO -  Fwd Header Length: 149590.94193297753
+2024-11-22 13:47:07,571 - INFO -  Bwd Header Length: 277789.09360903216
+2024-11-22 13:47:07,571 - INFO - Fwd Packets/s: 12359007711.084583
+2024-11-22 13:47:07,571 - INFO -  Bwd Packets/s: 382560559.4583149
+2024-11-22 13:47:07,571 - INFO -  Min Packet Length: 247.35152076136347
+2024-11-22 13:47:07,571 - INFO -  Max Packet Length: 14545560.05069406
+2024-11-22 13:47:07,571 - INFO -  Packet Length Mean: 312465.2029217043
+2024-11-22 13:47:07,571 - INFO -  Packet Length Std: 1612333.6574041091
+2024-11-22 13:47:07,572 - INFO -  Packet Length Variance: 16956564346368.918
+2024-11-22 13:47:07,572 - INFO - FIN Flag Count: 0.0026012437626214556
+2024-11-22 13:47:07,572 - INFO -  SYN Flag Count: 0.032274767594053295
+2024-11-22 13:47:07,572 - INFO -  RST Flag Count: 0.00011626876760415367
+2024-11-22 13:47:07,572 - INFO -  PSH Flag Count: 0.2277834337622869
+2024-11-22 13:47:07,572 - INFO -  ACK Flag Count: 0.24997886538078715
+2024-11-22 13:47:07,572 - INFO -  URG Flag Count: 0.12096840480155638
+2024-11-22 13:47:07,572 - INFO -  CWE Flag Count: 0.0
+2024-11-22 13:47:07,572 - INFO -  ECE Flag Count: 0.00011626876760415367
+2024-11-22 13:47:07,572 - INFO -  Down/Up Ratio: 2.0497470389944663
+2024-11-22 13:47:07,572 - INFO -  Average Packet Size: 391844.9658711469
+2024-11-22 13:47:07,572 - INFO -  Avg Fwd Segment Size: 254846.0891343328
+2024-11-22 13:47:07,572 - INFO -  Avg Bwd Segment Size: 1255940.3722666989
+2024-11-22 13:47:07,572 - INFO -  Fwd Header Length.1: 149590.94193297753
+2024-11-22 13:47:07,572 - INFO - Fwd Avg Bytes/Bulk: 0.0
+2024-11-22 13:47:07,572 - INFO -  Fwd Avg Packets/Bulk: 0.0
+2024-11-22 13:47:07,572 - INFO -  Fwd Avg Bulk Rate: 0.0
+2024-11-22 13:47:07,572 - INFO -  Bwd Avg Bytes/Bulk: 0.0
+2024-11-22 13:47:07,572 - INFO -  Bwd Avg Packets/Bulk: 0.0
+2024-11-22 13:47:07,572 - INFO - Bwd Avg Bulk Rate: 0.0
+2024-11-22 13:47:07,572 - INFO - Subflow Fwd Packets: 249.4684093028581
+2024-11-22 13:47:07,572 - INFO -  Subflow Fwd Bytes: 10332271.211744042
+2024-11-22 13:47:07,572 - INFO -  Subflow Bwd Packets: 494.8167023432056
+2024-11-22 13:47:07,573 - INFO -  Subflow Bwd Bytes: 1633725978.8570242
+2024-11-22 13:47:07,573 - INFO - Init_Win_bytes_forward: 64775319.10086768
+2024-11-22 13:47:07,573 - INFO -  Init_Win_bytes_backward: 18476983.03919823
+2024-11-22 13:47:07,573 - INFO -  act_data_pkt_fwd: 156.8818182696736
+2024-11-22 13:47:07,573 - INFO -  min_seg_size_forward: 17.377658835903834
+2024-11-22 13:47:07,573 - INFO - Active Mean: 603697119563.1248
+2024-11-22 13:47:07,573 - INFO -  Active Std: 47784216270.49275
+2024-11-22 13:47:07,573 - INFO -  Active Max: 781174564947.7384
+2024-11-22 13:47:07,573 - INFO -  Active Min: 580025805489.8876
+2024-11-22 13:47:07,573 - INFO - Idle Mean: 479560955165135.0
+2024-11-22 13:47:07,573 - INFO -  Idle Std: 162311459808709.44
+2024-11-22 13:47:07,573 - INFO -  Idle Max: 725926075276934.4
+2024-11-22 13:47:07,573 - INFO -  Idle Min: 395697620428070.94
+2024-11-22 13:47:07,668 - INFO - 
+Features after variance thresholding: 65
+2024-11-22 13:47:07,668 - INFO - Dropped 13 features:
+2024-11-22 13:47:07,668 - INFO - -  Bwd PSH Flags
+2024-11-22 13:47:07,668 - INFO - -  Fwd URG Flags
+2024-11-22 13:47:07,668 - INFO - -  Bwd URG Flags
+2024-11-22 13:47:07,668 - INFO - - FIN Flag Count
+2024-11-22 13:47:07,668 - INFO - -  RST Flag Count
+2024-11-22 13:47:07,668 - INFO - -  CWE Flag Count
+2024-11-22 13:47:07,668 - INFO - -  ECE Flag Count
+2024-11-22 13:47:07,668 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 13:47:07,668 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 13:47:07,668 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 13:47:07,668 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 13:47:07,668 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 13:47:07,668 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 13:47:12,440 - INFO - 
+Applying feature selection
+2024-11-22 13:47:12,440 - INFO - Features before selection: 65
+2024-11-22 13:47:24,441 - INFO - Features after selection: 22
+2024-11-22 13:47:24,441 - INFO - Selected features:
+2024-11-22 13:47:24,442 - INFO - -  Destination Port
+2024-11-22 13:47:24,442 - INFO - -  Total Fwd Packets
+2024-11-22 13:47:24,442 - INFO - -  Total Backward Packets
+2024-11-22 13:47:24,442 - INFO - - Total Length of Fwd Packets
+2024-11-22 13:47:24,442 - INFO - -  Total Length of Bwd Packets
+2024-11-22 13:47:24,442 - INFO - -  Fwd Packet Length Max
+2024-11-22 13:47:24,442 - INFO - -  Fwd Packet Length Mean
+2024-11-22 13:47:24,442 - INFO - - Bwd Packet Length Max
+2024-11-22 13:47:24,442 - INFO - -  Bwd Packet Length Mean
+2024-11-22 13:47:24,442 - INFO - -  Fwd IAT Std
+2024-11-22 13:47:24,442 - INFO - -  Fwd IAT Max
+2024-11-22 13:47:24,442 - INFO - -  Fwd Header Length
+2024-11-22 13:47:24,442 - INFO - -  Average Packet Size
+2024-11-22 13:47:24,442 - INFO - -  Avg Fwd Segment Size
+2024-11-22 13:47:24,442 - INFO - -  Avg Bwd Segment Size
+2024-11-22 13:47:24,442 - INFO - -  Fwd Header Length.1
+2024-11-22 13:47:24,442 - INFO - - Subflow Fwd Packets
+2024-11-22 13:47:24,442 - INFO - -  Subflow Fwd Bytes
+2024-11-22 13:47:24,442 - INFO - -  Subflow Bwd Bytes
+2024-11-22 13:47:24,442 - INFO - - Init_Win_bytes_forward
+2024-11-22 13:47:24,442 - INFO - -  Init_Win_bytes_backward
+2024-11-22 13:47:24,442 - INFO - -  act_data_pkt_fwd
+2024-11-22 13:47:24,444 - INFO - Starting hyperparameter search...
+2024-11-22 14:13:23,102 - INFO - 
+Best parameters: {'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': None}
+2024-11-22 14:13:23,503 - INFO - 
+Classification Report:
+2024-11-22 14:13:23,562 - INFO - 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19544
+           1       1.00      1.00      1.00     25605
+
+    accuracy                           1.00     45149
+   macro avg       1.00      1.00      1.00     45149
+weighted avg       1.00      1.00      1.00     45149
+
+2024-11-22 14:13:23,904 - INFO - 
+Detailed Metrics:
+2024-11-22 14:13:23,906 - INFO - Accuracy: 1.0000
+2024-11-22 14:13:23,918 - INFO - Precision: 1.0000
+2024-11-22 14:13:23,932 - INFO - Recall: 1.0000
+2024-11-22 14:13:23,950 - INFO - F1 Score: 1.0000
+2024-11-22 14:13:23,951 - INFO - ROC AUC: 1.0000
+2024-11-22 14:13:24,002 - INFO - 
+Pipeline components saved.
+2024-11-22 14:13:24,003 - INFO - 
+Total training time: 26.29 minutes
+2024-11-22 14:17:35,217 - INFO - Starting model training process...
+2024-11-22 14:17:35,217 - INFO - Loading dataset...
+2024-11-22 14:17:35,939 - INFO - Dataset shape: (225745, 79)
+2024-11-22 14:17:35,951 - INFO - Class distribution:
+ Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-22 14:17:36,035 - INFO - Features with missing values:
+Flow Bytes/s       34
+ Flow Packets/s    34
+dtype: int64
+2024-11-22 14:17:36,182 - INFO - 
+Applying variance thresholding with threshold 0.01
+2024-11-22 14:17:36,182 - INFO - Original number of features: 78
+2024-11-22 14:17:36,218 - INFO - 
+Feature variances:
+2024-11-22 14:17:36,219 - INFO -  Destination Port: 390258674.3683131
+2024-11-22 14:17:36,219 - INFO -  Flow Duration: 993714405749891.4
+2024-11-22 14:17:36,219 - INFO -  Total Fwd Packets: 249.4684093028581
+2024-11-22 14:17:36,219 - INFO -  Total Backward Packets: 494.8167023432056
+2024-11-22 14:17:36,219 - INFO - Total Length of Fwd Packets: 10332271.211744042
+2024-11-22 14:17:36,219 - INFO -  Total Length of Bwd Packets: 1633725978.8570242
+2024-11-22 14:17:36,219 - INFO -  Fwd Packet Length Max: 3464788.377959907
+2024-11-22 14:17:36,219 - INFO -  Fwd Packet Length Min: 26839.74989473053
+2024-11-22 14:17:36,219 - INFO -  Fwd Packet Length Mean: 254846.0891343328
+2024-11-22 14:17:36,219 - INFO -  Fwd Packet Length Std: 633638.8960934001
+2024-11-22 14:17:36,219 - INFO - Bwd Packet Length Max: 13742460.61005701
+2024-11-22 14:17:36,219 - INFO -  Bwd Packet Length Min: 2551.335977988233
+2024-11-22 14:17:36,219 - INFO -  Bwd Packet Length Mean: 1255940.3722666118
+2024-11-22 14:17:36,219 - INFO -  Bwd Packet Length Std: 3008645.7994750417
+2024-11-22 14:17:36,219 - INFO - Flow Bytes/s: 279528817652509.28
+2024-11-22 14:17:36,219 - INFO -  Flow Packets/s: 13322001849.949106
+2024-11-22 14:17:36,219 - INFO -  Flow IAT Mean: 7330221041394.244
+2024-11-22 14:17:36,219 - INFO -  Flow IAT Std: 58180458722306.02
+2024-11-22 14:17:36,219 - INFO -  Flow IAT Max: 714153682424075.4
+2024-11-22 14:17:36,219 - INFO -  Flow IAT Min: 618755971698.4794
+2024-11-22 14:17:36,219 - INFO - Fwd IAT Total: 999187937225582.2
+2024-11-22 14:17:36,219 - INFO -  Fwd IAT Mean: 35083055794901.473
+2024-11-22 14:17:36,219 - INFO -  Fwd IAT Std: 116472024897906.92
+2024-11-22 14:17:36,219 - INFO -  Fwd IAT Max: 756741663186248.5
+2024-11-22 14:17:36,219 - INFO -  Fwd IAT Min: 14258001760147.38
+2024-11-22 14:17:36,219 - INFO - Bwd IAT Total: 481384965770228.75
+2024-11-22 14:17:36,219 - INFO -  Bwd IAT Mean: 20827613264920.695
+2024-11-22 14:17:36,219 - INFO -  Bwd IAT Std: 29979229923408.137
+2024-11-22 14:17:36,219 - INFO -  Bwd IAT Max: 261323311136394.16
+2024-11-22 14:17:36,219 - INFO -  Bwd IAT Min: 15932419873981.246
+2024-11-22 14:17:36,219 - INFO - Fwd PSH Flags: 0.032274767594053295
+2024-11-22 14:17:36,219 - INFO -  Bwd PSH Flags: 0.0
+2024-11-22 14:17:36,219 - INFO -  Fwd URG Flags: 0.0
+2024-11-22 14:17:36,219 - INFO -  Bwd URG Flags: 0.0
+2024-11-22 14:17:36,219 - INFO -  Fwd Header Length: 149590.94193297753
+2024-11-22 14:17:36,219 - INFO -  Bwd Header Length: 277789.09360903216
+2024-11-22 14:17:36,219 - INFO - Fwd Packets/s: 12359007711.084583
+2024-11-22 14:17:36,219 - INFO -  Bwd Packets/s: 382560559.4583149
+2024-11-22 14:17:36,219 - INFO -  Min Packet Length: 247.35152076136347
+2024-11-22 14:17:36,219 - INFO -  Max Packet Length: 14545560.05069406
+2024-11-22 14:17:36,220 - INFO -  Packet Length Mean: 312465.2029217043
+2024-11-22 14:17:36,220 - INFO -  Packet Length Std: 1612333.6574041091
+2024-11-22 14:17:36,220 - INFO -  Packet Length Variance: 16956564346368.918
+2024-11-22 14:17:36,220 - INFO - FIN Flag Count: 0.0026012437626214556
+2024-11-22 14:17:36,220 - INFO -  SYN Flag Count: 0.032274767594053295
+2024-11-22 14:17:36,220 - INFO -  RST Flag Count: 0.00011626876760415367
+2024-11-22 14:17:36,220 - INFO -  PSH Flag Count: 0.2277834337622869
+2024-11-22 14:17:36,220 - INFO -  ACK Flag Count: 0.24997886538078715
+2024-11-22 14:17:36,220 - INFO -  URG Flag Count: 0.12096840480155638
+2024-11-22 14:17:36,220 - INFO -  CWE Flag Count: 0.0
+2024-11-22 14:17:36,220 - INFO -  ECE Flag Count: 0.00011626876760415367
+2024-11-22 14:17:36,220 - INFO -  Down/Up Ratio: 2.0497470389944663
+2024-11-22 14:17:36,220 - INFO -  Average Packet Size: 391844.9658711469
+2024-11-22 14:17:36,220 - INFO -  Avg Fwd Segment Size: 254846.0891343328
+2024-11-22 14:17:36,220 - INFO -  Avg Bwd Segment Size: 1255940.3722666989
+2024-11-22 14:17:36,220 - INFO -  Fwd Header Length.1: 149590.94193297753
+2024-11-22 14:17:36,220 - INFO - Fwd Avg Bytes/Bulk: 0.0
+2024-11-22 14:17:36,220 - INFO -  Fwd Avg Packets/Bulk: 0.0
+2024-11-22 14:17:36,220 - INFO -  Fwd Avg Bulk Rate: 0.0
+2024-11-22 14:17:36,220 - INFO -  Bwd Avg Bytes/Bulk: 0.0
+2024-11-22 14:17:36,220 - INFO -  Bwd Avg Packets/Bulk: 0.0
+2024-11-22 14:17:36,220 - INFO - Bwd Avg Bulk Rate: 0.0
+2024-11-22 14:17:36,220 - INFO - Subflow Fwd Packets: 249.4684093028581
+2024-11-22 14:17:36,220 - INFO -  Subflow Fwd Bytes: 10332271.211744042
+2024-11-22 14:17:36,220 - INFO -  Subflow Bwd Packets: 494.8167023432056
+2024-11-22 14:17:36,220 - INFO -  Subflow Bwd Bytes: 1633725978.8570242
+2024-11-22 14:17:36,220 - INFO - Init_Win_bytes_forward: 64775319.10086768
+2024-11-22 14:17:36,220 - INFO -  Init_Win_bytes_backward: 18476983.03919823
+2024-11-22 14:17:36,220 - INFO -  act_data_pkt_fwd: 156.8818182696736
+2024-11-22 14:17:36,220 - INFO -  min_seg_size_forward: 17.377658835903834
+2024-11-22 14:17:36,220 - INFO - Active Mean: 603697119563.1248
+2024-11-22 14:17:36,220 - INFO -  Active Std: 47784216270.49275
+2024-11-22 14:17:36,220 - INFO -  Active Max: 781174564947.7384
+2024-11-22 14:17:36,220 - INFO -  Active Min: 580025805489.8876
+2024-11-22 14:17:36,220 - INFO - Idle Mean: 479560955165135.0
+2024-11-22 14:17:36,220 - INFO -  Idle Std: 162311459808709.44
+2024-11-22 14:17:36,220 - INFO -  Idle Max: 725926075276934.4
+2024-11-22 14:17:36,220 - INFO -  Idle Min: 395697620428070.94
+2024-11-22 14:17:36,330 - INFO - 
+Features after variance thresholding: 65
+2024-11-22 14:17:36,330 - INFO - Dropped 13 features:
+2024-11-22 14:17:36,330 - INFO - -  Bwd PSH Flags
+2024-11-22 14:17:36,330 - INFO - -  Fwd URG Flags
+2024-11-22 14:17:36,330 - INFO - -  Bwd URG Flags
+2024-11-22 14:17:36,330 - INFO - - FIN Flag Count
+2024-11-22 14:17:36,331 - INFO - -  RST Flag Count
+2024-11-22 14:17:36,331 - INFO - -  CWE Flag Count
+2024-11-22 14:17:36,331 - INFO - -  ECE Flag Count
+2024-11-22 14:17:36,331 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:17:36,331 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:17:36,331 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:17:36,331 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:17:36,331 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:17:36,331 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:17:41,242 - INFO - 
+Applying feature selection
+2024-11-22 14:17:41,242 - INFO - Features before selection: 65
+2024-11-22 14:17:53,203 - INFO - Features after selection: 22
+2024-11-22 14:17:53,204 - INFO - Selected features:
+2024-11-22 14:17:53,204 - INFO - -  Destination Port
+2024-11-22 14:17:53,204 - INFO - -  Total Fwd Packets
+2024-11-22 14:17:53,204 - INFO - -  Total Backward Packets
+2024-11-22 14:17:53,204 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:17:53,204 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:17:53,204 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:17:53,204 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:17:53,204 - INFO - - Bwd Packet Length Max
+2024-11-22 14:17:53,204 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:17:53,204 - INFO - -  Fwd IAT Std
+2024-11-22 14:17:53,204 - INFO - -  Fwd IAT Max
+2024-11-22 14:17:53,204 - INFO - -  Fwd Header Length
+2024-11-22 14:17:53,204 - INFO - -  Average Packet Size
+2024-11-22 14:17:53,204 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:17:53,204 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:17:53,204 - INFO - -  Fwd Header Length.1
+2024-11-22 14:17:53,204 - INFO - - Subflow Fwd Packets
+2024-11-22 14:17:53,204 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:17:53,204 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:17:53,204 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:17:53,204 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:17:53,204 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:17:53,206 - INFO - Starting hyperparameter search...
+2024-11-22 14:25:16,442 - INFO - 
+Best parameters: {'n_estimators': 100, 'min_samples_split': 30, 'min_samples_leaf': 5, 'max_features': 'sqrt', 'max_depth': 15}
+2024-11-22 14:25:16,634 - INFO - 
+Classification Report:
+2024-11-22 14:25:16,676 - INFO - 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19544
+           1       1.00      1.00      1.00     25605
+
+    accuracy                           1.00     45149
+   macro avg       1.00      1.00      1.00     45149
+weighted avg       1.00      1.00      1.00     45149
+
+2024-11-22 14:25:16,971 - INFO - 
+Detailed Metrics:
+2024-11-22 14:25:16,974 - INFO - Accuracy: 0.9997
+2024-11-22 14:25:16,984 - INFO - Precision: 1.0000
+2024-11-22 14:25:16,994 - INFO - Recall: 0.9995
+2024-11-22 14:25:17,004 - INFO - F1 Score: 0.9997
+2024-11-22 14:25:17,004 - INFO - ROC AUC: 1.0000
+2024-11-22 14:25:49,009 - INFO - 
+Cross-validation scores: [0.99960946 0.99980473 0.99985355 0.99985355 0.99970709]
+2024-11-22 14:25:49,009 - INFO - Mean CV score: 0.9998 (+/- 0.0002)
+2024-11-22 14:25:49,038 - INFO - 
+Pipeline components saved.
+2024-11-22 14:25:49,039 - INFO - 
+Total training time: 8.23 minutes
+2024-11-22 14:25:51,493 - INFO - Starting model training process...
+2024-11-22 14:25:51,493 - INFO - Loading dataset...
+2024-11-22 14:25:52,165 - INFO - Dataset shape: (225745, 79)
+2024-11-22 14:25:52,174 - INFO - Class distribution:
+ Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-22 14:25:52,255 - INFO - Features with missing values:
+Flow Bytes/s       34
+ Flow Packets/s    34
+dtype: int64
+2024-11-22 14:25:52,405 - INFO - 
+Applying variance thresholding with threshold 0.01
+2024-11-22 14:25:52,405 - INFO - Original number of features: 78
+2024-11-22 14:25:52,442 - INFO - 
+Feature variances:
+2024-11-22 14:25:52,442 - INFO -  Destination Port: 390258674.3683131
+2024-11-22 14:25:52,442 - INFO -  Flow Duration: 993714405749891.4
+2024-11-22 14:25:52,442 - INFO -  Total Fwd Packets: 249.4684093028581
+2024-11-22 14:25:52,442 - INFO -  Total Backward Packets: 494.8167023432056
+2024-11-22 14:25:52,442 - INFO - Total Length of Fwd Packets: 10332271.211744042
+2024-11-22 14:25:52,442 - INFO -  Total Length of Bwd Packets: 1633725978.8570242
+2024-11-22 14:25:52,442 - INFO -  Fwd Packet Length Max: 3464788.377959907
+2024-11-22 14:25:52,442 - INFO -  Fwd Packet Length Min: 26839.74989473053
+2024-11-22 14:25:52,442 - INFO -  Fwd Packet Length Mean: 254846.0891343328
+2024-11-22 14:25:52,442 - INFO -  Fwd Packet Length Std: 633638.8960934001
+2024-11-22 14:25:52,442 - INFO - Bwd Packet Length Max: 13742460.61005701
+2024-11-22 14:25:52,442 - INFO -  Bwd Packet Length Min: 2551.335977988233
+2024-11-22 14:25:52,442 - INFO -  Bwd Packet Length Mean: 1255940.3722666118
+2024-11-22 14:25:52,442 - INFO -  Bwd Packet Length Std: 3008645.7994750417
+2024-11-22 14:25:52,442 - INFO - Flow Bytes/s: 279528817652509.28
+2024-11-22 14:25:52,442 - INFO -  Flow Packets/s: 13322001849.949106
+2024-11-22 14:25:52,442 - INFO -  Flow IAT Mean: 7330221041394.244
+2024-11-22 14:25:52,442 - INFO -  Flow IAT Std: 58180458722306.02
+2024-11-22 14:25:52,442 - INFO -  Flow IAT Max: 714153682424075.4
+2024-11-22 14:25:52,442 - INFO -  Flow IAT Min: 618755971698.4794
+2024-11-22 14:25:52,442 - INFO - Fwd IAT Total: 999187937225582.2
+2024-11-22 14:25:52,442 - INFO -  Fwd IAT Mean: 35083055794901.473
+2024-11-22 14:25:52,442 - INFO -  Fwd IAT Std: 116472024897906.92
+2024-11-22 14:25:52,442 - INFO -  Fwd IAT Max: 756741663186248.5
+2024-11-22 14:25:52,442 - INFO -  Fwd IAT Min: 14258001760147.38
+2024-11-22 14:25:52,442 - INFO - Bwd IAT Total: 481384965770228.75
+2024-11-22 14:25:52,442 - INFO -  Bwd IAT Mean: 20827613264920.695
+2024-11-22 14:25:52,442 - INFO -  Bwd IAT Std: 29979229923408.137
+2024-11-22 14:25:52,442 - INFO -  Bwd IAT Max: 261323311136394.16
+2024-11-22 14:25:52,442 - INFO -  Bwd IAT Min: 15932419873981.246
+2024-11-22 14:25:52,442 - INFO - Fwd PSH Flags: 0.032274767594053295
+2024-11-22 14:25:52,442 - INFO -  Bwd PSH Flags: 0.0
+2024-11-22 14:25:52,442 - INFO -  Fwd URG Flags: 0.0
+2024-11-22 14:25:52,442 - INFO -  Bwd URG Flags: 0.0
+2024-11-22 14:25:52,442 - INFO -  Fwd Header Length: 149590.94193297753
+2024-11-22 14:25:52,442 - INFO -  Bwd Header Length: 277789.09360903216
+2024-11-22 14:25:52,442 - INFO - Fwd Packets/s: 12359007711.084583
+2024-11-22 14:25:52,442 - INFO -  Bwd Packets/s: 382560559.4583149
+2024-11-22 14:25:52,442 - INFO -  Min Packet Length: 247.35152076136347
+2024-11-22 14:25:52,442 - INFO -  Max Packet Length: 14545560.05069406
+2024-11-22 14:25:52,442 - INFO -  Packet Length Mean: 312465.2029217043
+2024-11-22 14:25:52,442 - INFO -  Packet Length Std: 1612333.6574041091
+2024-11-22 14:25:52,442 - INFO -  Packet Length Variance: 16956564346368.918
+2024-11-22 14:25:52,442 - INFO - FIN Flag Count: 0.0026012437626214556
+2024-11-22 14:25:52,442 - INFO -  SYN Flag Count: 0.032274767594053295
+2024-11-22 14:25:52,442 - INFO -  RST Flag Count: 0.00011626876760415367
+2024-11-22 14:25:52,442 - INFO -  PSH Flag Count: 0.2277834337622869
+2024-11-22 14:25:52,443 - INFO -  ACK Flag Count: 0.24997886538078715
+2024-11-22 14:25:52,443 - INFO -  URG Flag Count: 0.12096840480155638
+2024-11-22 14:25:52,443 - INFO -  CWE Flag Count: 0.0
+2024-11-22 14:25:52,443 - INFO -  ECE Flag Count: 0.00011626876760415367
+2024-11-22 14:25:52,443 - INFO -  Down/Up Ratio: 2.0497470389944663
+2024-11-22 14:25:52,443 - INFO -  Average Packet Size: 391844.9658711469
+2024-11-22 14:25:52,443 - INFO -  Avg Fwd Segment Size: 254846.0891343328
+2024-11-22 14:25:52,443 - INFO -  Avg Bwd Segment Size: 1255940.3722666989
+2024-11-22 14:25:52,443 - INFO -  Fwd Header Length.1: 149590.94193297753
+2024-11-22 14:25:52,443 - INFO - Fwd Avg Bytes/Bulk: 0.0
+2024-11-22 14:25:52,443 - INFO -  Fwd Avg Packets/Bulk: 0.0
+2024-11-22 14:25:52,443 - INFO -  Fwd Avg Bulk Rate: 0.0
+2024-11-22 14:25:52,443 - INFO -  Bwd Avg Bytes/Bulk: 0.0
+2024-11-22 14:25:52,443 - INFO -  Bwd Avg Packets/Bulk: 0.0
+2024-11-22 14:25:52,443 - INFO - Bwd Avg Bulk Rate: 0.0
+2024-11-22 14:25:52,443 - INFO - Subflow Fwd Packets: 249.4684093028581
+2024-11-22 14:25:52,443 - INFO -  Subflow Fwd Bytes: 10332271.211744042
+2024-11-22 14:25:52,443 - INFO -  Subflow Bwd Packets: 494.8167023432056
+2024-11-22 14:25:52,443 - INFO -  Subflow Bwd Bytes: 1633725978.8570242
+2024-11-22 14:25:52,443 - INFO - Init_Win_bytes_forward: 64775319.10086768
+2024-11-22 14:25:52,443 - INFO -  Init_Win_bytes_backward: 18476983.03919823
+2024-11-22 14:25:52,443 - INFO -  act_data_pkt_fwd: 156.8818182696736
+2024-11-22 14:25:52,443 - INFO -  min_seg_size_forward: 17.377658835903834
+2024-11-22 14:25:52,443 - INFO - Active Mean: 603697119563.1248
+2024-11-22 14:25:52,443 - INFO -  Active Std: 47784216270.49275
+2024-11-22 14:25:52,443 - INFO -  Active Max: 781174564947.7384
+2024-11-22 14:25:52,443 - INFO -  Active Min: 580025805489.8876
+2024-11-22 14:25:52,443 - INFO - Idle Mean: 479560955165135.0
+2024-11-22 14:25:52,443 - INFO -  Idle Std: 162311459808709.44
+2024-11-22 14:25:52,443 - INFO -  Idle Max: 725926075276934.4
+2024-11-22 14:25:52,443 - INFO -  Idle Min: 395697620428070.94
+2024-11-22 14:25:52,532 - INFO - 
+Features after variance thresholding: 65
+2024-11-22 14:25:52,532 - INFO - Dropped 13 features:
+2024-11-22 14:25:52,532 - INFO - -  Bwd PSH Flags
+2024-11-22 14:25:52,532 - INFO - -  Fwd URG Flags
+2024-11-22 14:25:52,532 - INFO - -  Bwd URG Flags
+2024-11-22 14:25:52,532 - INFO - - FIN Flag Count
+2024-11-22 14:25:52,532 - INFO - -  RST Flag Count
+2024-11-22 14:25:52,532 - INFO - -  CWE Flag Count
+2024-11-22 14:25:52,532 - INFO - -  ECE Flag Count
+2024-11-22 14:25:52,532 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:25:52,532 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:25:52,532 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:25:52,532 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:25:52,532 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:25:52,532 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:25:57,689 - INFO - 
+Applying feature selection
+2024-11-22 14:25:57,689 - INFO - Features before selection: 65
+2024-11-22 14:26:09,576 - INFO - Features after selection: 22
+2024-11-22 14:26:09,576 - INFO - Selected features:
+2024-11-22 14:26:09,576 - INFO - -  Destination Port
+2024-11-22 14:26:09,576 - INFO - -  Total Fwd Packets
+2024-11-22 14:26:09,576 - INFO - -  Total Backward Packets
+2024-11-22 14:26:09,576 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:26:09,576 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:26:09,576 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:26:09,576 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:26:09,576 - INFO - - Bwd Packet Length Max
+2024-11-22 14:26:09,576 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:26:09,576 - INFO - -  Fwd IAT Std
+2024-11-22 14:26:09,576 - INFO - -  Fwd IAT Max
+2024-11-22 14:26:09,576 - INFO - -  Fwd Header Length
+2024-11-22 14:26:09,576 - INFO - -  Average Packet Size
+2024-11-22 14:26:09,576 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:26:09,576 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:26:09,576 - INFO - -  Fwd Header Length.1
+2024-11-22 14:26:09,576 - INFO - - Subflow Fwd Packets
+2024-11-22 14:26:09,577 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:26:09,577 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:26:09,577 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:26:09,577 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:26:09,577 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:26:09,579 - INFO - Starting hyperparameter search...
+2024-11-22 14:31:19,548 - INFO - Starting model training process...
+2024-11-22 14:31:19,548 - INFO - Loading dataset...
+2024-11-22 14:31:20,369 - INFO - Starting hyperparameter search...
+2024-11-22 14:33:08,840 - INFO - Starting model training process...
+2024-11-22 14:33:08,840 - INFO - Loading dataset...
+2024-11-22 14:33:09,539 - INFO - Preprocessing data...
+2024-11-22 14:33:10,102 - INFO - Starting hyperparameter search...
+2024-11-22 14:35:10,282 - INFO - Starting model training process...
+2024-11-22 14:35:10,282 - INFO - Loading dataset...
+2024-11-22 14:35:11,003 - INFO - Initial number of features: 78
+2024-11-22 14:35:11,003 - INFO - Initial features:
+2024-11-22 14:35:11,003 - INFO - -  Destination Port
+2024-11-22 14:35:11,003 - INFO - -  Flow Duration
+2024-11-22 14:35:11,003 - INFO - -  Total Fwd Packets
+2024-11-22 14:35:11,003 - INFO - -  Total Backward Packets
+2024-11-22 14:35:11,003 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:35:11,003 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:35:11,003 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:35:11,003 - INFO - -  Fwd Packet Length Min
+2024-11-22 14:35:11,003 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:35:11,003 - INFO - -  Fwd Packet Length Std
+2024-11-22 14:35:11,003 - INFO - - Bwd Packet Length Max
+2024-11-22 14:35:11,003 - INFO - -  Bwd Packet Length Min
+2024-11-22 14:35:11,003 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:35:11,003 - INFO - -  Bwd Packet Length Std
+2024-11-22 14:35:11,003 - INFO - - Flow Bytes/s
+2024-11-22 14:35:11,003 - INFO - -  Flow Packets/s
+2024-11-22 14:35:11,003 - INFO - -  Flow IAT Mean
+2024-11-22 14:35:11,003 - INFO - -  Flow IAT Std
+2024-11-22 14:35:11,003 - INFO - -  Flow IAT Max
+2024-11-22 14:35:11,003 - INFO - -  Flow IAT Min
+2024-11-22 14:35:11,003 - INFO - - Fwd IAT Total
+2024-11-22 14:35:11,003 - INFO - -  Fwd IAT Mean
+2024-11-22 14:35:11,003 - INFO - -  Fwd IAT Std
+2024-11-22 14:35:11,004 - INFO - -  Fwd IAT Max
+2024-11-22 14:35:11,004 - INFO - -  Fwd IAT Min
+2024-11-22 14:35:11,004 - INFO - - Bwd IAT Total
+2024-11-22 14:35:11,004 - INFO - -  Bwd IAT Mean
+2024-11-22 14:35:11,004 - INFO - -  Bwd IAT Std
+2024-11-22 14:35:11,004 - INFO - -  Bwd IAT Max
+2024-11-22 14:35:11,004 - INFO - -  Bwd IAT Min
+2024-11-22 14:35:11,004 - INFO - - Fwd PSH Flags
+2024-11-22 14:35:11,004 - INFO - -  Bwd PSH Flags
+2024-11-22 14:35:11,004 - INFO - -  Fwd URG Flags
+2024-11-22 14:35:11,004 - INFO - -  Bwd URG Flags
+2024-11-22 14:35:11,004 - INFO - -  Fwd Header Length
+2024-11-22 14:35:11,004 - INFO - -  Bwd Header Length
+2024-11-22 14:35:11,004 - INFO - - Fwd Packets/s
+2024-11-22 14:35:11,004 - INFO - -  Bwd Packets/s
+2024-11-22 14:35:11,004 - INFO - -  Min Packet Length
+2024-11-22 14:35:11,004 - INFO - -  Max Packet Length
+2024-11-22 14:35:11,004 - INFO - -  Packet Length Mean
+2024-11-22 14:35:11,004 - INFO - -  Packet Length Std
+2024-11-22 14:35:11,004 - INFO - -  Packet Length Variance
+2024-11-22 14:35:11,004 - INFO - - FIN Flag Count
+2024-11-22 14:35:11,004 - INFO - -  SYN Flag Count
+2024-11-22 14:35:11,004 - INFO - -  RST Flag Count
+2024-11-22 14:35:11,004 - INFO - -  PSH Flag Count
+2024-11-22 14:35:11,004 - INFO - -  ACK Flag Count
+2024-11-22 14:35:11,004 - INFO - -  URG Flag Count
+2024-11-22 14:35:11,004 - INFO - -  CWE Flag Count
+2024-11-22 14:35:11,004 - INFO - -  ECE Flag Count
+2024-11-22 14:35:11,004 - INFO - -  Down/Up Ratio
+2024-11-22 14:35:11,004 - INFO - -  Average Packet Size
+2024-11-22 14:35:11,004 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:35:11,004 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:35:11,004 - INFO - -  Fwd Header Length.1
+2024-11-22 14:35:11,004 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:35:11,004 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:35:11,004 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:35:11,004 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:35:11,005 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:35:11,005 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:35:11,005 - INFO - - Subflow Fwd Packets
+2024-11-22 14:35:11,005 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:35:11,005 - INFO - -  Subflow Bwd Packets
+2024-11-22 14:35:11,005 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:35:11,005 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:35:11,005 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:35:11,005 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:35:11,005 - INFO - -  min_seg_size_forward
+2024-11-22 14:35:11,005 - INFO - - Active Mean
+2024-11-22 14:35:11,005 - INFO - -  Active Std
+2024-11-22 14:35:11,005 - INFO - -  Active Max
+2024-11-22 14:35:11,005 - INFO - -  Active Min
+2024-11-22 14:35:11,005 - INFO - - Idle Mean
+2024-11-22 14:35:11,005 - INFO - -  Idle Std
+2024-11-22 14:35:11,005 - INFO - -  Idle Max
+2024-11-22 14:35:11,005 - INFO - -  Idle Min
+2024-11-22 14:35:11,005 - INFO - 
+Preprocessing data...
+2024-11-22 14:35:11,058 - INFO - Feature ' Destination Port' clipped between 53.00 and 63808.56
+2024-11-22 14:35:11,064 - INFO - Feature ' Flow Duration' clipped between 4.00 and 115860163.76
+2024-11-22 14:35:11,068 - INFO - Feature ' Total Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:35:11,074 - INFO - Feature ' Total Backward Packets' clipped between 0.00 and 29.00
+2024-11-22 14:35:11,077 - INFO - Feature 'Total Length of Fwd Packets' clipped between 0.00 and 11613.00
+2024-11-22 14:35:11,084 - INFO - Feature ' Total Length of Bwd Packets' clipped between 0.00 and 17432.56
+2024-11-22 14:35:11,088 - INFO - Feature ' Fwd Packet Length Max' clipped between 0.00 and 10135.00
+2024-11-22 14:35:11,092 - INFO - Feature ' Fwd Packet Length Min' clipped between 0.00 and 1375.00
+2024-11-22 14:35:11,098 - INFO - Feature ' Fwd Packet Length Mean' clipped between 0.00 and 2321.40
+2024-11-22 14:35:11,108 - INFO - Feature ' Fwd Packet Length Std' clipped between 0.00 and 4059.46
+2024-11-22 14:35:11,112 - INFO - Feature 'Bwd Packet Length Max' clipped between 0.00 and 11595.00
+2024-11-22 14:35:11,115 - INFO - Feature ' Bwd Packet Length Min' clipped between 0.00 and 185.00
+2024-11-22 14:35:11,123 - INFO - Feature ' Bwd Packet Length Mean' clipped between 0.00 and 2901.75
+2024-11-22 14:35:11,131 - INFO - Feature ' Bwd Packet Length Std' clipped between 0.00 and 5795.50
+2024-11-22 14:35:11,138 - INFO - Feature 'Flow Bytes/s' clipped between 0.00 and 4000000.00
+2024-11-22 14:35:11,146 - INFO - Feature ' Flow Packets/s' clipped between 0.13 and 600000.00
+2024-11-22 14:35:11,155 - INFO - Feature ' Flow IAT Mean' clipped between 3.00 and 8466438.42
+2024-11-22 14:35:11,163 - INFO - Feature ' Flow IAT Std' clipped between 0.00 and 27000000.00
+2024-11-22 14:35:11,168 - INFO - Feature ' Flow IAT Max' clipped between 4.00 and 94700000.00
+2024-11-22 14:35:11,174 - INFO - Feature ' Flow IAT Min' clipped between 0.00 and 149502.44
+2024-11-22 14:35:11,179 - INFO - Feature 'Fwd IAT Total' clipped between 0.00 and 116000000.00
+2024-11-22 14:35:11,186 - INFO - Feature ' Fwd IAT Mean' clipped between 0.00 and 20200000.00
+2024-11-22 14:35:11,193 - INFO - Feature ' Fwd IAT Std' clipped between 0.00 and 40800000.00
+2024-11-22 14:35:11,199 - INFO - Feature ' Fwd IAT Max' clipped between 0.00 and 96800000.00
+2024-11-22 14:35:11,206 - INFO - Feature ' Fwd IAT Min' clipped between 0.00 and 192434.04
+2024-11-22 14:35:11,210 - INFO - Feature 'Bwd IAT Total' clipped between 0.00 and 111000000.00
+2024-11-22 14:35:11,217 - INFO - Feature ' Bwd IAT Mean' clipped between 0.00 and 11900000.00
+2024-11-22 14:35:11,224 - INFO - Feature ' Bwd IAT Std' clipped between 0.00 and 30000000.00
+2024-11-22 14:35:11,227 - INFO - Feature ' Bwd IAT Max' clipped between 0.00 and 87700000.00
+2024-11-22 14:35:11,233 - INFO - Feature ' Bwd IAT Min' clipped between 0.00 and 17013.80
+2024-11-22 14:35:11,237 - INFO - Feature 'Fwd PSH Flags' clipped between 0.00 and 1.00
+2024-11-22 14:35:11,240 - INFO - Feature ' Bwd PSH Flags' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,242 - INFO - Feature ' Fwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,245 - INFO - Feature ' Bwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,249 - INFO - Feature ' Fwd Header Length' clipped between 20.00 and 712.00
+2024-11-22 14:35:11,252 - INFO - Feature ' Bwd Header Length' clipped between 0.00 and 744.00
+2024-11-22 14:35:11,259 - INFO - Feature 'Fwd Packets/s' clipped between 0.06 and 532133.33
+2024-11-22 14:35:11,264 - INFO - Feature ' Bwd Packets/s' clipped between 0.00 and 19607.84
+2024-11-22 14:35:11,267 - INFO - Feature ' Min Packet Length' clipped between 0.00 and 58.00
+2024-11-22 14:35:11,271 - INFO - Feature ' Max Packet Length' clipped between 0.00 and 11595.00
+2024-11-22 14:35:11,278 - INFO - Feature ' Packet Length Mean' clipped between 0.00 and 1454.12
+2024-11-22 14:35:11,285 - INFO - Feature ' Packet Length Std' clipped between 0.00 and 4097.54
+2024-11-22 14:35:11,293 - INFO - Feature ' Packet Length Variance' clipped between 0.00 and 16800000.00
+2024-11-22 14:35:11,296 - INFO - Feature 'FIN Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,298 - INFO - Feature ' SYN Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:35:11,301 - INFO - Feature ' RST Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,303 - INFO - Feature ' PSH Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:35:11,306 - INFO - Feature ' ACK Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:35:11,309 - INFO - Feature ' URG Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:35:11,312 - INFO - Feature ' CWE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,314 - INFO - Feature ' ECE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,318 - INFO - Feature ' Down/Up Ratio' clipped between 0.00 and 6.00
+2024-11-22 14:35:11,324 - INFO - Feature ' Average Packet Size' clipped between 0.00 and 1661.86
+2024-11-22 14:35:11,332 - INFO - Feature ' Avg Fwd Segment Size' clipped between 0.00 and 2321.40
+2024-11-22 14:35:11,338 - INFO - Feature ' Avg Bwd Segment Size' clipped between 0.00 and 2901.75
+2024-11-22 14:35:11,342 - INFO - Feature ' Fwd Header Length.1' clipped between 20.00 and 712.00
+2024-11-22 14:35:11,344 - INFO - Feature 'Fwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,346 - INFO - Feature ' Fwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,349 - INFO - Feature ' Fwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,351 - INFO - Feature ' Bwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,354 - INFO - Feature ' Bwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,356 - INFO - Feature 'Bwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:35:11,359 - INFO - Feature 'Subflow Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:35:11,363 - INFO - Feature ' Subflow Fwd Bytes' clipped between 0.00 and 11613.00
+2024-11-22 14:35:11,367 - INFO - Feature ' Subflow Bwd Packets' clipped between 0.00 and 29.00
+2024-11-22 14:35:11,371 - INFO - Feature ' Subflow Bwd Bytes' clipped between 0.00 and 17432.56
+2024-11-22 14:35:11,375 - INFO - Feature 'Init_Win_bytes_forward' clipped between -1.00 and 30228.00
+2024-11-22 14:35:11,379 - INFO - Feature ' Init_Win_bytes_backward' clipped between -1.00 and 16563.92
+2024-11-22 14:35:11,383 - INFO - Feature ' act_data_pkt_fwd' clipped between 0.00 and 21.00
+2024-11-22 14:35:11,386 - INFO - Feature ' min_seg_size_forward' clipped between 20.00 and 40.00
+2024-11-22 14:35:11,393 - INFO - Feature 'Active Mean' clipped between 0.00 and 4134663.08
+2024-11-22 14:35:11,398 - INFO - Feature ' Active Std' clipped between 0.00 and 248292.49
+2024-11-22 14:35:11,403 - INFO - Feature ' Active Max' clipped between 0.00 and 4205998.64
+2024-11-22 14:35:11,407 - INFO - Feature ' Active Min' clipped between 0.00 and 4125898.88
+2024-11-22 14:35:11,414 - INFO - Feature 'Idle Mean' clipped between 0.00 and 93956000.00
+2024-11-22 14:35:11,420 - INFO - Feature ' Idle Std' clipped between 0.00 and 57100000.00
+2024-11-22 14:35:11,423 - INFO - Feature ' Idle Max' clipped between 0.00 and 94700000.00
+2024-11-22 14:35:11,429 - INFO - Feature ' Idle Min' clipped between 0.00 and 93956000.00
+2024-11-22 14:35:11,542 - INFO - Starting hyperparameter search...
+2024-11-22 14:46:56,377 - INFO - 
+Best parameters: {'classifier__n_estimators': 100, 'classifier__min_samples_split': 30, 'classifier__min_samples_leaf': 10, 'classifier__max_samples': 0.7, 'classifier__max_features': 'sqrt', 'classifier__max_depth': 7, 'classifier__ccp_alpha': 0.001}
+2024-11-22 14:48:38,098 - INFO - 
+Cross-validation scores: [0.99880952 0.99864337 0.99903098 0.99883718 0.99875412]
+2024-11-22 14:48:38,099 - INFO - Mean CV score: 0.9988 (+/- 0.0003)
+2024-11-22 14:48:38,350 - INFO - 
+Classification Report:
+2024-11-22 14:48:38,407 - INFO - 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19544
+           1       1.00      1.00      1.00     25605
+
+    accuracy                           1.00     45149
+   macro avg       1.00      1.00      1.00     45149
+weighted avg       1.00      1.00      1.00     45149
+
+2024-11-22 14:48:38,747 - INFO - 
+Detailed Metrics:
+2024-11-22 14:48:38,751 - INFO - Accuracy: 0.9987
+2024-11-22 14:48:38,767 - INFO - Precision: 0.9997
+2024-11-22 14:48:38,780 - INFO - Recall: 0.9980
+2024-11-22 14:48:38,793 - INFO - F1 Score: 0.9988
+2024-11-22 14:48:38,794 - INFO - ROC AUC: 1.0000
+2024-11-22 14:51:09,866 - INFO - Starting model training process...
+2024-11-22 14:51:09,866 - INFO - Loading dataset...
+2024-11-22 14:51:10,607 - INFO - Initial number of features: 78
+2024-11-22 14:51:10,607 - INFO - Initial features:
+2024-11-22 14:51:10,607 - INFO - -  Destination Port
+2024-11-22 14:51:10,607 - INFO - -  Flow Duration
+2024-11-22 14:51:10,607 - INFO - -  Total Fwd Packets
+2024-11-22 14:51:10,607 - INFO - -  Total Backward Packets
+2024-11-22 14:51:10,607 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:51:10,607 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:51:10,607 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:51:10,607 - INFO - -  Fwd Packet Length Min
+2024-11-22 14:51:10,607 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:51:10,607 - INFO - -  Fwd Packet Length Std
+2024-11-22 14:51:10,607 - INFO - - Bwd Packet Length Max
+2024-11-22 14:51:10,607 - INFO - -  Bwd Packet Length Min
+2024-11-22 14:51:10,607 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:51:10,607 - INFO - -  Bwd Packet Length Std
+2024-11-22 14:51:10,607 - INFO - - Flow Bytes/s
+2024-11-22 14:51:10,607 - INFO - -  Flow Packets/s
+2024-11-22 14:51:10,607 - INFO - -  Flow IAT Mean
+2024-11-22 14:51:10,607 - INFO - -  Flow IAT Std
+2024-11-22 14:51:10,607 - INFO - -  Flow IAT Max
+2024-11-22 14:51:10,607 - INFO - -  Flow IAT Min
+2024-11-22 14:51:10,607 - INFO - - Fwd IAT Total
+2024-11-22 14:51:10,607 - INFO - -  Fwd IAT Mean
+2024-11-22 14:51:10,607 - INFO - -  Fwd IAT Std
+2024-11-22 14:51:10,608 - INFO - -  Fwd IAT Max
+2024-11-22 14:51:10,608 - INFO - -  Fwd IAT Min
+2024-11-22 14:51:10,608 - INFO - - Bwd IAT Total
+2024-11-22 14:51:10,608 - INFO - -  Bwd IAT Mean
+2024-11-22 14:51:10,608 - INFO - -  Bwd IAT Std
+2024-11-22 14:51:10,608 - INFO - -  Bwd IAT Max
+2024-11-22 14:51:10,608 - INFO - -  Bwd IAT Min
+2024-11-22 14:51:10,608 - INFO - - Fwd PSH Flags
+2024-11-22 14:51:10,608 - INFO - -  Bwd PSH Flags
+2024-11-22 14:51:10,608 - INFO - -  Fwd URG Flags
+2024-11-22 14:51:10,608 - INFO - -  Bwd URG Flags
+2024-11-22 14:51:10,608 - INFO - -  Fwd Header Length
+2024-11-22 14:51:10,608 - INFO - -  Bwd Header Length
+2024-11-22 14:51:10,608 - INFO - - Fwd Packets/s
+2024-11-22 14:51:10,608 - INFO - -  Bwd Packets/s
+2024-11-22 14:51:10,608 - INFO - -  Min Packet Length
+2024-11-22 14:51:10,608 - INFO - -  Max Packet Length
+2024-11-22 14:51:10,608 - INFO - -  Packet Length Mean
+2024-11-22 14:51:10,608 - INFO - -  Packet Length Std
+2024-11-22 14:51:10,608 - INFO - -  Packet Length Variance
+2024-11-22 14:51:10,608 - INFO - - FIN Flag Count
+2024-11-22 14:51:10,608 - INFO - -  SYN Flag Count
+2024-11-22 14:51:10,608 - INFO - -  RST Flag Count
+2024-11-22 14:51:10,608 - INFO - -  PSH Flag Count
+2024-11-22 14:51:10,608 - INFO - -  ACK Flag Count
+2024-11-22 14:51:10,608 - INFO - -  URG Flag Count
+2024-11-22 14:51:10,608 - INFO - -  CWE Flag Count
+2024-11-22 14:51:10,608 - INFO - -  ECE Flag Count
+2024-11-22 14:51:10,608 - INFO - -  Down/Up Ratio
+2024-11-22 14:51:10,608 - INFO - -  Average Packet Size
+2024-11-22 14:51:10,608 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:51:10,608 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:51:10,608 - INFO - -  Fwd Header Length.1
+2024-11-22 14:51:10,608 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:51:10,608 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:51:10,608 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:51:10,608 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:51:10,608 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:51:10,608 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:51:10,608 - INFO - - Subflow Fwd Packets
+2024-11-22 14:51:10,608 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:51:10,608 - INFO - -  Subflow Bwd Packets
+2024-11-22 14:51:10,608 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:51:10,608 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:51:10,608 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:51:10,608 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:51:10,608 - INFO - -  min_seg_size_forward
+2024-11-22 14:51:10,608 - INFO - - Active Mean
+2024-11-22 14:51:10,608 - INFO - -  Active Std
+2024-11-22 14:51:10,609 - INFO - -  Active Max
+2024-11-22 14:51:10,609 - INFO - -  Active Min
+2024-11-22 14:51:10,609 - INFO - - Idle Mean
+2024-11-22 14:51:10,609 - INFO - -  Idle Std
+2024-11-22 14:51:10,609 - INFO - -  Idle Max
+2024-11-22 14:51:10,609 - INFO - -  Idle Min
+2024-11-22 14:51:10,609 - INFO - 
+Preprocessing data...
+2024-11-22 14:51:10,658 - INFO - Feature ' Destination Port' clipped between 53.00 and 63808.56
+2024-11-22 14:51:10,666 - INFO - Feature ' Flow Duration' clipped between 4.00 and 115860163.76
+2024-11-22 14:51:10,670 - INFO - Feature ' Total Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:51:10,676 - INFO - Feature ' Total Backward Packets' clipped between 0.00 and 29.00
+2024-11-22 14:51:10,680 - INFO - Feature 'Total Length of Fwd Packets' clipped between 0.00 and 11613.00
+2024-11-22 14:51:10,685 - INFO - Feature ' Total Length of Bwd Packets' clipped between 0.00 and 17432.56
+2024-11-22 14:51:10,689 - INFO - Feature ' Fwd Packet Length Max' clipped between 0.00 and 10135.00
+2024-11-22 14:51:10,692 - INFO - Feature ' Fwd Packet Length Min' clipped between 0.00 and 1375.00
+2024-11-22 14:51:10,699 - INFO - Feature ' Fwd Packet Length Mean' clipped between 0.00 and 2321.40
+2024-11-22 14:51:10,707 - INFO - Feature ' Fwd Packet Length Std' clipped between 0.00 and 4059.46
+2024-11-22 14:51:10,711 - INFO - Feature 'Bwd Packet Length Max' clipped between 0.00 and 11595.00
+2024-11-22 14:51:10,713 - INFO - Feature ' Bwd Packet Length Min' clipped between 0.00 and 185.00
+2024-11-22 14:51:10,720 - INFO - Feature ' Bwd Packet Length Mean' clipped between 0.00 and 2901.75
+2024-11-22 14:51:10,727 - INFO - Feature ' Bwd Packet Length Std' clipped between 0.00 and 5795.50
+2024-11-22 14:51:10,734 - INFO - Feature 'Flow Bytes/s' clipped between 0.00 and 4000000.00
+2024-11-22 14:51:10,740 - INFO - Feature ' Flow Packets/s' clipped between 0.13 and 600000.00
+2024-11-22 14:51:10,748 - INFO - Feature ' Flow IAT Mean' clipped between 3.00 and 8466438.42
+2024-11-22 14:51:10,755 - INFO - Feature ' Flow IAT Std' clipped between 0.00 and 27000000.00
+2024-11-22 14:51:10,759 - INFO - Feature ' Flow IAT Max' clipped between 4.00 and 94700000.00
+2024-11-22 14:51:10,765 - INFO - Feature ' Flow IAT Min' clipped between 0.00 and 149502.44
+2024-11-22 14:51:10,768 - INFO - Feature 'Fwd IAT Total' clipped between 0.00 and 116000000.00
+2024-11-22 14:51:10,774 - INFO - Feature ' Fwd IAT Mean' clipped between 0.00 and 20200000.00
+2024-11-22 14:51:10,781 - INFO - Feature ' Fwd IAT Std' clipped between 0.00 and 40800000.00
+2024-11-22 14:51:10,785 - INFO - Feature ' Fwd IAT Max' clipped between 0.00 and 96800000.00
+2024-11-22 14:51:10,791 - INFO - Feature ' Fwd IAT Min' clipped between 0.00 and 192434.04
+2024-11-22 14:51:10,794 - INFO - Feature 'Bwd IAT Total' clipped between 0.00 and 111000000.00
+2024-11-22 14:51:10,801 - INFO - Feature ' Bwd IAT Mean' clipped between 0.00 and 11900000.00
+2024-11-22 14:51:10,808 - INFO - Feature ' Bwd IAT Std' clipped between 0.00 and 30000000.00
+2024-11-22 14:51:10,812 - INFO - Feature ' Bwd IAT Max' clipped between 0.00 and 87700000.00
+2024-11-22 14:51:10,818 - INFO - Feature ' Bwd IAT Min' clipped between 0.00 and 17013.80
+2024-11-22 14:51:10,821 - INFO - Feature 'Fwd PSH Flags' clipped between 0.00 and 1.00
+2024-11-22 14:51:10,823 - INFO - Feature ' Bwd PSH Flags' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,827 - INFO - Feature ' Fwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,830 - INFO - Feature ' Bwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,833 - INFO - Feature ' Fwd Header Length' clipped between 20.00 and 712.00
+2024-11-22 14:51:10,839 - INFO - Feature ' Bwd Header Length' clipped between 0.00 and 744.00
+2024-11-22 14:51:10,844 - INFO - Feature 'Fwd Packets/s' clipped between 0.06 and 532133.33
+2024-11-22 14:51:10,849 - INFO - Feature ' Bwd Packets/s' clipped between 0.00 and 19607.84
+2024-11-22 14:51:10,853 - INFO - Feature ' Min Packet Length' clipped between 0.00 and 58.00
+2024-11-22 14:51:10,856 - INFO - Feature ' Max Packet Length' clipped between 0.00 and 11595.00
+2024-11-22 14:51:10,863 - INFO - Feature ' Packet Length Mean' clipped between 0.00 and 1454.12
+2024-11-22 14:51:10,869 - INFO - Feature ' Packet Length Std' clipped between 0.00 and 4097.54
+2024-11-22 14:51:10,875 - INFO - Feature ' Packet Length Variance' clipped between 0.00 and 16800000.00
+2024-11-22 14:51:10,879 - INFO - Feature 'FIN Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,882 - INFO - Feature ' SYN Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:51:10,885 - INFO - Feature ' RST Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,888 - INFO - Feature ' PSH Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:51:10,890 - INFO - Feature ' ACK Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:51:10,894 - INFO - Feature ' URG Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:51:10,896 - INFO - Feature ' CWE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,898 - INFO - Feature ' ECE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,901 - INFO - Feature ' Down/Up Ratio' clipped between 0.00 and 6.00
+2024-11-22 14:51:10,908 - INFO - Feature ' Average Packet Size' clipped between 0.00 and 1661.86
+2024-11-22 14:51:10,913 - INFO - Feature ' Avg Fwd Segment Size' clipped between 0.00 and 2321.40
+2024-11-22 14:51:10,920 - INFO - Feature ' Avg Bwd Segment Size' clipped between 0.00 and 2901.75
+2024-11-22 14:51:10,923 - INFO - Feature ' Fwd Header Length.1' clipped between 20.00 and 712.00
+2024-11-22 14:51:10,925 - INFO - Feature 'Fwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,927 - INFO - Feature ' Fwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,930 - INFO - Feature ' Fwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,932 - INFO - Feature ' Bwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,934 - INFO - Feature ' Bwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,936 - INFO - Feature 'Bwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:51:10,940 - INFO - Feature 'Subflow Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:51:10,944 - INFO - Feature ' Subflow Fwd Bytes' clipped between 0.00 and 11613.00
+2024-11-22 14:51:10,949 - INFO - Feature ' Subflow Bwd Packets' clipped between 0.00 and 29.00
+2024-11-22 14:51:10,953 - INFO - Feature ' Subflow Bwd Bytes' clipped between 0.00 and 17432.56
+2024-11-22 14:51:10,957 - INFO - Feature 'Init_Win_bytes_forward' clipped between -1.00 and 30228.00
+2024-11-22 14:51:10,962 - INFO - Feature ' Init_Win_bytes_backward' clipped between -1.00 and 16563.92
+2024-11-22 14:51:10,966 - INFO - Feature ' act_data_pkt_fwd' clipped between 0.00 and 21.00
+2024-11-22 14:51:10,970 - INFO - Feature ' min_seg_size_forward' clipped between 20.00 and 40.00
+2024-11-22 14:51:10,976 - INFO - Feature 'Active Mean' clipped between 0.00 and 4134663.08
+2024-11-22 14:51:10,982 - INFO - Feature ' Active Std' clipped between 0.00 and 248292.49
+2024-11-22 14:51:10,988 - INFO - Feature ' Active Max' clipped between 0.00 and 4205998.64
+2024-11-22 14:51:10,994 - INFO - Feature ' Active Min' clipped between 0.00 and 4125898.88
+2024-11-22 14:51:11,000 - INFO - Feature 'Idle Mean' clipped between 0.00 and 93956000.00
+2024-11-22 14:51:11,006 - INFO - Feature ' Idle Std' clipped between 0.00 and 57100000.00
+2024-11-22 14:51:11,010 - INFO - Feature ' Idle Max' clipped between 0.00 and 94700000.00
+2024-11-22 14:51:11,017 - INFO - Feature ' Idle Min' clipped between 0.00 and 93956000.00
+2024-11-22 14:51:11,128 - INFO - Starting hyperparameter search...
+2024-11-22 14:53:03,111 - INFO - Starting model training process...
+2024-11-22 14:53:03,111 - INFO - Loading dataset...
+2024-11-22 14:53:03,736 - INFO - Initial number of features: 78
+2024-11-22 14:53:03,736 - INFO - Initial features:
+2024-11-22 14:53:03,737 - INFO - -  Destination Port
+2024-11-22 14:53:03,737 - INFO - -  Flow Duration
+2024-11-22 14:53:03,737 - INFO - -  Total Fwd Packets
+2024-11-22 14:53:03,737 - INFO - -  Total Backward Packets
+2024-11-22 14:53:03,737 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:53:03,737 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:53:03,737 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:53:03,737 - INFO - -  Fwd Packet Length Min
+2024-11-22 14:53:03,737 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:53:03,737 - INFO - -  Fwd Packet Length Std
+2024-11-22 14:53:03,737 - INFO - - Bwd Packet Length Max
+2024-11-22 14:53:03,737 - INFO - -  Bwd Packet Length Min
+2024-11-22 14:53:03,737 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:53:03,737 - INFO - -  Bwd Packet Length Std
+2024-11-22 14:53:03,737 - INFO - - Flow Bytes/s
+2024-11-22 14:53:03,737 - INFO - -  Flow Packets/s
+2024-11-22 14:53:03,737 - INFO - -  Flow IAT Mean
+2024-11-22 14:53:03,737 - INFO - -  Flow IAT Std
+2024-11-22 14:53:03,737 - INFO - -  Flow IAT Max
+2024-11-22 14:53:03,737 - INFO - -  Flow IAT Min
+2024-11-22 14:53:03,737 - INFO - - Fwd IAT Total
+2024-11-22 14:53:03,737 - INFO - -  Fwd IAT Mean
+2024-11-22 14:53:03,737 - INFO - -  Fwd IAT Std
+2024-11-22 14:53:03,737 - INFO - -  Fwd IAT Max
+2024-11-22 14:53:03,737 - INFO - -  Fwd IAT Min
+2024-11-22 14:53:03,737 - INFO - - Bwd IAT Total
+2024-11-22 14:53:03,737 - INFO - -  Bwd IAT Mean
+2024-11-22 14:53:03,737 - INFO - -  Bwd IAT Std
+2024-11-22 14:53:03,737 - INFO - -  Bwd IAT Max
+2024-11-22 14:53:03,737 - INFO - -  Bwd IAT Min
+2024-11-22 14:53:03,737 - INFO - - Fwd PSH Flags
+2024-11-22 14:53:03,737 - INFO - -  Bwd PSH Flags
+2024-11-22 14:53:03,737 - INFO - -  Fwd URG Flags
+2024-11-22 14:53:03,737 - INFO - -  Bwd URG Flags
+2024-11-22 14:53:03,737 - INFO - -  Fwd Header Length
+2024-11-22 14:53:03,737 - INFO - -  Bwd Header Length
+2024-11-22 14:53:03,737 - INFO - - Fwd Packets/s
+2024-11-22 14:53:03,737 - INFO - -  Bwd Packets/s
+2024-11-22 14:53:03,737 - INFO - -  Min Packet Length
+2024-11-22 14:53:03,737 - INFO - -  Max Packet Length
+2024-11-22 14:53:03,737 - INFO - -  Packet Length Mean
+2024-11-22 14:53:03,738 - INFO - -  Packet Length Std
+2024-11-22 14:53:03,738 - INFO - -  Packet Length Variance
+2024-11-22 14:53:03,738 - INFO - - FIN Flag Count
+2024-11-22 14:53:03,738 - INFO - -  SYN Flag Count
+2024-11-22 14:53:03,738 - INFO - -  RST Flag Count
+2024-11-22 14:53:03,738 - INFO - -  PSH Flag Count
+2024-11-22 14:53:03,738 - INFO - -  ACK Flag Count
+2024-11-22 14:53:03,738 - INFO - -  URG Flag Count
+2024-11-22 14:53:03,738 - INFO - -  CWE Flag Count
+2024-11-22 14:53:03,738 - INFO - -  ECE Flag Count
+2024-11-22 14:53:03,738 - INFO - -  Down/Up Ratio
+2024-11-22 14:53:03,738 - INFO - -  Average Packet Size
+2024-11-22 14:53:03,738 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:53:03,738 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:53:03,738 - INFO - -  Fwd Header Length.1
+2024-11-22 14:53:03,738 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:53:03,738 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:53:03,738 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:53:03,738 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:53:03,738 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:53:03,738 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:53:03,738 - INFO - - Subflow Fwd Packets
+2024-11-22 14:53:03,738 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:53:03,738 - INFO - -  Subflow Bwd Packets
+2024-11-22 14:53:03,738 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:53:03,738 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:53:03,738 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:53:03,738 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:53:03,738 - INFO - -  min_seg_size_forward
+2024-11-22 14:53:03,738 - INFO - - Active Mean
+2024-11-22 14:53:03,738 - INFO - -  Active Std
+2024-11-22 14:53:03,738 - INFO - -  Active Max
+2024-11-22 14:53:03,738 - INFO - -  Active Min
+2024-11-22 14:53:03,738 - INFO - - Idle Mean
+2024-11-22 14:53:03,738 - INFO - -  Idle Std
+2024-11-22 14:53:03,738 - INFO - -  Idle Max
+2024-11-22 14:53:03,738 - INFO - -  Idle Min
+2024-11-22 14:53:03,738 - INFO - 
+Preprocessing data...
+2024-11-22 14:53:03,773 - INFO - Feature ' Destination Port' clipped between 53.00 and 63808.56
+2024-11-22 14:53:03,780 - INFO - Feature ' Flow Duration' clipped between 4.00 and 115860163.76
+2024-11-22 14:53:03,785 - INFO - Feature ' Total Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:53:03,791 - INFO - Feature ' Total Backward Packets' clipped between 0.00 and 29.00
+2024-11-22 14:53:03,795 - INFO - Feature 'Total Length of Fwd Packets' clipped between 0.00 and 11613.00
+2024-11-22 14:53:03,802 - INFO - Feature ' Total Length of Bwd Packets' clipped between 0.00 and 17432.56
+2024-11-22 14:53:03,806 - INFO - Feature ' Fwd Packet Length Max' clipped between 0.00 and 10135.00
+2024-11-22 14:53:03,810 - INFO - Feature ' Fwd Packet Length Min' clipped between 0.00 and 1375.00
+2024-11-22 14:53:03,819 - INFO - Feature ' Fwd Packet Length Mean' clipped between 0.00 and 2321.40
+2024-11-22 14:53:03,827 - INFO - Feature ' Fwd Packet Length Std' clipped between 0.00 and 4059.46
+2024-11-22 14:53:03,831 - INFO - Feature 'Bwd Packet Length Max' clipped between 0.00 and 11595.00
+2024-11-22 14:53:03,834 - INFO - Feature ' Bwd Packet Length Min' clipped between 0.00 and 185.00
+2024-11-22 14:53:03,841 - INFO - Feature ' Bwd Packet Length Mean' clipped between 0.00 and 2901.75
+2024-11-22 14:53:03,849 - INFO - Feature ' Bwd Packet Length Std' clipped between 0.00 and 5795.50
+2024-11-22 14:53:03,855 - INFO - Feature 'Flow Bytes/s' clipped between 0.00 and 4000000.00
+2024-11-22 14:53:03,865 - INFO - Feature ' Flow Packets/s' clipped between 0.13 and 600000.00
+2024-11-22 14:53:03,874 - INFO - Feature ' Flow IAT Mean' clipped between 3.00 and 8466438.42
+2024-11-22 14:53:03,881 - INFO - Feature ' Flow IAT Std' clipped between 0.00 and 27000000.00
+2024-11-22 14:53:03,885 - INFO - Feature ' Flow IAT Max' clipped between 4.00 and 94700000.00
+2024-11-22 14:53:03,890 - INFO - Feature ' Flow IAT Min' clipped between 0.00 and 149502.44
+2024-11-22 14:53:03,895 - INFO - Feature 'Fwd IAT Total' clipped between 0.00 and 116000000.00
+2024-11-22 14:53:03,902 - INFO - Feature ' Fwd IAT Mean' clipped between 0.00 and 20200000.00
+2024-11-22 14:53:03,909 - INFO - Feature ' Fwd IAT Std' clipped between 0.00 and 40800000.00
+2024-11-22 14:53:03,913 - INFO - Feature ' Fwd IAT Max' clipped between 0.00 and 96800000.00
+2024-11-22 14:53:03,919 - INFO - Feature ' Fwd IAT Min' clipped between 0.00 and 192434.04
+2024-11-22 14:53:03,922 - INFO - Feature 'Bwd IAT Total' clipped between 0.00 and 111000000.00
+2024-11-22 14:53:03,929 - INFO - Feature ' Bwd IAT Mean' clipped between 0.00 and 11900000.00
+2024-11-22 14:53:03,935 - INFO - Feature ' Bwd IAT Std' clipped between 0.00 and 30000000.00
+2024-11-22 14:53:03,940 - INFO - Feature ' Bwd IAT Max' clipped between 0.00 and 87700000.00
+2024-11-22 14:53:03,947 - INFO - Feature ' Bwd IAT Min' clipped between 0.00 and 17013.80
+2024-11-22 14:53:03,950 - INFO - Feature 'Fwd PSH Flags' clipped between 0.00 and 1.00
+2024-11-22 14:53:03,953 - INFO - Feature ' Bwd PSH Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:03,956 - INFO - Feature ' Fwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:03,958 - INFO - Feature ' Bwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:03,961 - INFO - Feature ' Fwd Header Length' clipped between 20.00 and 712.00
+2024-11-22 14:53:03,965 - INFO - Feature ' Bwd Header Length' clipped between 0.00 and 744.00
+2024-11-22 14:53:03,971 - INFO - Feature 'Fwd Packets/s' clipped between 0.06 and 532133.33
+2024-11-22 14:53:03,977 - INFO - Feature ' Bwd Packets/s' clipped between 0.00 and 19607.84
+2024-11-22 14:53:03,980 - INFO - Feature ' Min Packet Length' clipped between 0.00 and 58.00
+2024-11-22 14:53:03,983 - INFO - Feature ' Max Packet Length' clipped between 0.00 and 11595.00
+2024-11-22 14:53:03,990 - INFO - Feature ' Packet Length Mean' clipped between 0.00 and 1454.12
+2024-11-22 14:53:03,996 - INFO - Feature ' Packet Length Std' clipped between 0.00 and 4097.54
+2024-11-22 14:53:04,003 - INFO - Feature ' Packet Length Variance' clipped between 0.00 and 16800000.00
+2024-11-22 14:53:04,005 - INFO - Feature 'FIN Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,007 - INFO - Feature ' SYN Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:04,010 - INFO - Feature ' RST Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,013 - INFO - Feature ' PSH Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:04,015 - INFO - Feature ' ACK Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:04,017 - INFO - Feature ' URG Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:04,019 - INFO - Feature ' CWE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,021 - INFO - Feature ' ECE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,025 - INFO - Feature ' Down/Up Ratio' clipped between 0.00 and 6.00
+2024-11-22 14:53:04,031 - INFO - Feature ' Average Packet Size' clipped between 0.00 and 1661.86
+2024-11-22 14:53:04,037 - INFO - Feature ' Avg Fwd Segment Size' clipped between 0.00 and 2321.40
+2024-11-22 14:53:04,045 - INFO - Feature ' Avg Bwd Segment Size' clipped between 0.00 and 2901.75
+2024-11-22 14:53:04,048 - INFO - Feature ' Fwd Header Length.1' clipped between 20.00 and 712.00
+2024-11-22 14:53:04,050 - INFO - Feature 'Fwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,053 - INFO - Feature ' Fwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,055 - INFO - Feature ' Fwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,058 - INFO - Feature ' Bwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,061 - INFO - Feature ' Bwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,063 - INFO - Feature 'Bwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:53:04,066 - INFO - Feature 'Subflow Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:53:04,069 - INFO - Feature ' Subflow Fwd Bytes' clipped between 0.00 and 11613.00
+2024-11-22 14:53:04,075 - INFO - Feature ' Subflow Bwd Packets' clipped between 0.00 and 29.00
+2024-11-22 14:53:04,079 - INFO - Feature ' Subflow Bwd Bytes' clipped between 0.00 and 17432.56
+2024-11-22 14:53:04,082 - INFO - Feature 'Init_Win_bytes_forward' clipped between -1.00 and 30228.00
+2024-11-22 14:53:04,087 - INFO - Feature ' Init_Win_bytes_backward' clipped between -1.00 and 16563.92
+2024-11-22 14:53:04,091 - INFO - Feature ' act_data_pkt_fwd' clipped between 0.00 and 21.00
+2024-11-22 14:53:04,095 - INFO - Feature ' min_seg_size_forward' clipped between 20.00 and 40.00
+2024-11-22 14:53:04,101 - INFO - Feature 'Active Mean' clipped between 0.00 and 4134663.08
+2024-11-22 14:53:04,107 - INFO - Feature ' Active Std' clipped between 0.00 and 248292.49
+2024-11-22 14:53:04,112 - INFO - Feature ' Active Max' clipped between 0.00 and 4205998.64
+2024-11-22 14:53:04,116 - INFO - Feature ' Active Min' clipped between 0.00 and 4125898.88
+2024-11-22 14:53:04,123 - INFO - Feature 'Idle Mean' clipped between 0.00 and 93956000.00
+2024-11-22 14:53:04,130 - INFO - Feature ' Idle Std' clipped between 0.00 and 57100000.00
+2024-11-22 14:53:04,133 - INFO - Feature ' Idle Max' clipped between 0.00 and 94700000.00
+2024-11-22 14:53:04,139 - INFO - Feature ' Idle Min' clipped between 0.00 and 93956000.00
+2024-11-22 14:53:04,245 - INFO - Initial number of features: 78
+2024-11-22 14:53:04,245 - INFO - Starting hyperparameter search...
+2024-11-22 14:53:39,609 - INFO - Starting model training process...
+2024-11-22 14:53:39,609 - INFO - Loading dataset...
+2024-11-22 14:53:40,309 - INFO - Initial number of features: 78
+2024-11-22 14:53:40,310 - INFO - Initial features:
+2024-11-22 14:53:40,310 - INFO - -  Destination Port
+2024-11-22 14:53:40,310 - INFO - -  Flow Duration
+2024-11-22 14:53:40,310 - INFO - -  Total Fwd Packets
+2024-11-22 14:53:40,310 - INFO - -  Total Backward Packets
+2024-11-22 14:53:40,310 - INFO - - Total Length of Fwd Packets
+2024-11-22 14:53:40,310 - INFO - -  Total Length of Bwd Packets
+2024-11-22 14:53:40,310 - INFO - -  Fwd Packet Length Max
+2024-11-22 14:53:40,310 - INFO - -  Fwd Packet Length Min
+2024-11-22 14:53:40,310 - INFO - -  Fwd Packet Length Mean
+2024-11-22 14:53:40,310 - INFO - -  Fwd Packet Length Std
+2024-11-22 14:53:40,310 - INFO - - Bwd Packet Length Max
+2024-11-22 14:53:40,310 - INFO - -  Bwd Packet Length Min
+2024-11-22 14:53:40,310 - INFO - -  Bwd Packet Length Mean
+2024-11-22 14:53:40,310 - INFO - -  Bwd Packet Length Std
+2024-11-22 14:53:40,310 - INFO - - Flow Bytes/s
+2024-11-22 14:53:40,310 - INFO - -  Flow Packets/s
+2024-11-22 14:53:40,310 - INFO - -  Flow IAT Mean
+2024-11-22 14:53:40,310 - INFO - -  Flow IAT Std
+2024-11-22 14:53:40,310 - INFO - -  Flow IAT Max
+2024-11-22 14:53:40,310 - INFO - -  Flow IAT Min
+2024-11-22 14:53:40,310 - INFO - - Fwd IAT Total
+2024-11-22 14:53:40,310 - INFO - -  Fwd IAT Mean
+2024-11-22 14:53:40,310 - INFO - -  Fwd IAT Std
+2024-11-22 14:53:40,310 - INFO - -  Fwd IAT Max
+2024-11-22 14:53:40,310 - INFO - -  Fwd IAT Min
+2024-11-22 14:53:40,310 - INFO - - Bwd IAT Total
+2024-11-22 14:53:40,310 - INFO - -  Bwd IAT Mean
+2024-11-22 14:53:40,310 - INFO - -  Bwd IAT Std
+2024-11-22 14:53:40,310 - INFO - -  Bwd IAT Max
+2024-11-22 14:53:40,310 - INFO - -  Bwd IAT Min
+2024-11-22 14:53:40,310 - INFO - - Fwd PSH Flags
+2024-11-22 14:53:40,310 - INFO - -  Bwd PSH Flags
+2024-11-22 14:53:40,310 - INFO - -  Fwd URG Flags
+2024-11-22 14:53:40,310 - INFO - -  Bwd URG Flags
+2024-11-22 14:53:40,310 - INFO - -  Fwd Header Length
+2024-11-22 14:53:40,310 - INFO - -  Bwd Header Length
+2024-11-22 14:53:40,310 - INFO - - Fwd Packets/s
+2024-11-22 14:53:40,310 - INFO - -  Bwd Packets/s
+2024-11-22 14:53:40,310 - INFO - -  Min Packet Length
+2024-11-22 14:53:40,310 - INFO - -  Max Packet Length
+2024-11-22 14:53:40,310 - INFO - -  Packet Length Mean
+2024-11-22 14:53:40,310 - INFO - -  Packet Length Std
+2024-11-22 14:53:40,310 - INFO - -  Packet Length Variance
+2024-11-22 14:53:40,310 - INFO - - FIN Flag Count
+2024-11-22 14:53:40,310 - INFO - -  SYN Flag Count
+2024-11-22 14:53:40,310 - INFO - -  RST Flag Count
+2024-11-22 14:53:40,310 - INFO - -  PSH Flag Count
+2024-11-22 14:53:40,310 - INFO - -  ACK Flag Count
+2024-11-22 14:53:40,310 - INFO - -  URG Flag Count
+2024-11-22 14:53:40,310 - INFO - -  CWE Flag Count
+2024-11-22 14:53:40,311 - INFO - -  ECE Flag Count
+2024-11-22 14:53:40,311 - INFO - -  Down/Up Ratio
+2024-11-22 14:53:40,311 - INFO - -  Average Packet Size
+2024-11-22 14:53:40,311 - INFO - -  Avg Fwd Segment Size
+2024-11-22 14:53:40,311 - INFO - -  Avg Bwd Segment Size
+2024-11-22 14:53:40,311 - INFO - -  Fwd Header Length.1
+2024-11-22 14:53:40,311 - INFO - - Fwd Avg Bytes/Bulk
+2024-11-22 14:53:40,311 - INFO - -  Fwd Avg Packets/Bulk
+2024-11-22 14:53:40,311 - INFO - -  Fwd Avg Bulk Rate
+2024-11-22 14:53:40,311 - INFO - -  Bwd Avg Bytes/Bulk
+2024-11-22 14:53:40,311 - INFO - -  Bwd Avg Packets/Bulk
+2024-11-22 14:53:40,311 - INFO - - Bwd Avg Bulk Rate
+2024-11-22 14:53:40,311 - INFO - - Subflow Fwd Packets
+2024-11-22 14:53:40,311 - INFO - -  Subflow Fwd Bytes
+2024-11-22 14:53:40,311 - INFO - -  Subflow Bwd Packets
+2024-11-22 14:53:40,311 - INFO - -  Subflow Bwd Bytes
+2024-11-22 14:53:40,311 - INFO - - Init_Win_bytes_forward
+2024-11-22 14:53:40,311 - INFO - -  Init_Win_bytes_backward
+2024-11-22 14:53:40,311 - INFO - -  act_data_pkt_fwd
+2024-11-22 14:53:40,311 - INFO - -  min_seg_size_forward
+2024-11-22 14:53:40,311 - INFO - - Active Mean
+2024-11-22 14:53:40,311 - INFO - -  Active Std
+2024-11-22 14:53:40,311 - INFO - -  Active Max
+2024-11-22 14:53:40,311 - INFO - -  Active Min
+2024-11-22 14:53:40,311 - INFO - - Idle Mean
+2024-11-22 14:53:40,311 - INFO - -  Idle Std
+2024-11-22 14:53:40,311 - INFO - -  Idle Max
+2024-11-22 14:53:40,311 - INFO - -  Idle Min
+2024-11-22 14:53:40,311 - INFO - 
+Preprocessing data...
+2024-11-22 14:53:40,347 - INFO - Feature ' Destination Port' clipped between 53.00 and 63808.56
+2024-11-22 14:53:40,355 - INFO - Feature ' Flow Duration' clipped between 4.00 and 115860163.76
+2024-11-22 14:53:40,358 - INFO - Feature ' Total Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:53:40,363 - INFO - Feature ' Total Backward Packets' clipped between 0.00 and 29.00
+2024-11-22 14:53:40,369 - INFO - Feature 'Total Length of Fwd Packets' clipped between 0.00 and 11613.00
+2024-11-22 14:53:40,376 - INFO - Feature ' Total Length of Bwd Packets' clipped between 0.00 and 17432.56
+2024-11-22 14:53:40,381 - INFO - Feature ' Fwd Packet Length Max' clipped between 0.00 and 10135.00
+2024-11-22 14:53:40,384 - INFO - Feature ' Fwd Packet Length Min' clipped between 0.00 and 1375.00
+2024-11-22 14:53:40,392 - INFO - Feature ' Fwd Packet Length Mean' clipped between 0.00 and 2321.40
+2024-11-22 14:53:40,400 - INFO - Feature ' Fwd Packet Length Std' clipped between 0.00 and 4059.46
+2024-11-22 14:53:40,405 - INFO - Feature 'Bwd Packet Length Max' clipped between 0.00 and 11595.00
+2024-11-22 14:53:40,410 - INFO - Feature ' Bwd Packet Length Min' clipped between 0.00 and 185.00
+2024-11-22 14:53:40,420 - INFO - Feature ' Bwd Packet Length Mean' clipped between 0.00 and 2901.75
+2024-11-22 14:53:40,428 - INFO - Feature ' Bwd Packet Length Std' clipped between 0.00 and 5795.50
+2024-11-22 14:53:40,438 - INFO - Feature 'Flow Bytes/s' clipped between 0.00 and 4000000.00
+2024-11-22 14:53:40,449 - INFO - Feature ' Flow Packets/s' clipped between 0.13 and 600000.00
+2024-11-22 14:53:40,461 - INFO - Feature ' Flow IAT Mean' clipped between 3.00 and 8466438.42
+2024-11-22 14:53:40,471 - INFO - Feature ' Flow IAT Std' clipped between 0.00 and 27000000.00
+2024-11-22 14:53:40,479 - INFO - Feature ' Flow IAT Max' clipped between 4.00 and 94700000.00
+2024-11-22 14:53:40,489 - INFO - Feature ' Flow IAT Min' clipped between 0.00 and 149502.44
+2024-11-22 14:53:40,494 - INFO - Feature 'Fwd IAT Total' clipped between 0.00 and 116000000.00
+2024-11-22 14:53:40,503 - INFO - Feature ' Fwd IAT Mean' clipped between 0.00 and 20200000.00
+2024-11-22 14:53:40,514 - INFO - Feature ' Fwd IAT Std' clipped between 0.00 and 40800000.00
+2024-11-22 14:53:40,520 - INFO - Feature ' Fwd IAT Max' clipped between 0.00 and 96800000.00
+2024-11-22 14:53:40,528 - INFO - Feature ' Fwd IAT Min' clipped between 0.00 and 192434.04
+2024-11-22 14:53:40,535 - INFO - Feature 'Bwd IAT Total' clipped between 0.00 and 111000000.00
+2024-11-22 14:53:40,543 - INFO - Feature ' Bwd IAT Mean' clipped between 0.00 and 11900000.00
+2024-11-22 14:53:40,551 - INFO - Feature ' Bwd IAT Std' clipped between 0.00 and 30000000.00
+2024-11-22 14:53:40,557 - INFO - Feature ' Bwd IAT Max' clipped between 0.00 and 87700000.00
+2024-11-22 14:53:40,566 - INFO - Feature ' Bwd IAT Min' clipped between 0.00 and 17013.80
+2024-11-22 14:53:40,570 - INFO - Feature 'Fwd PSH Flags' clipped between 0.00 and 1.00
+2024-11-22 14:53:40,573 - INFO - Feature ' Bwd PSH Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,576 - INFO - Feature ' Fwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,580 - INFO - Feature ' Bwd URG Flags' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,585 - INFO - Feature ' Fwd Header Length' clipped between 20.00 and 712.00
+2024-11-22 14:53:40,589 - INFO - Feature ' Bwd Header Length' clipped between 0.00 and 744.00
+2024-11-22 14:53:40,597 - INFO - Feature 'Fwd Packets/s' clipped between 0.06 and 532133.33
+2024-11-22 14:53:40,603 - INFO - Feature ' Bwd Packets/s' clipped between 0.00 and 19607.84
+2024-11-22 14:53:40,607 - INFO - Feature ' Min Packet Length' clipped between 0.00 and 58.00
+2024-11-22 14:53:40,611 - INFO - Feature ' Max Packet Length' clipped between 0.00 and 11595.00
+2024-11-22 14:53:40,618 - INFO - Feature ' Packet Length Mean' clipped between 0.00 and 1454.12
+2024-11-22 14:53:40,625 - INFO - Feature ' Packet Length Std' clipped between 0.00 and 4097.54
+2024-11-22 14:53:40,632 - INFO - Feature ' Packet Length Variance' clipped between 0.00 and 16800000.00
+2024-11-22 14:53:40,635 - INFO - Feature 'FIN Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,638 - INFO - Feature ' SYN Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:40,641 - INFO - Feature ' RST Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,644 - INFO - Feature ' PSH Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:40,646 - INFO - Feature ' ACK Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:40,650 - INFO - Feature ' URG Flag Count' clipped between 0.00 and 1.00
+2024-11-22 14:53:40,652 - INFO - Feature ' CWE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,655 - INFO - Feature ' ECE Flag Count' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,658 - INFO - Feature ' Down/Up Ratio' clipped between 0.00 and 6.00
+2024-11-22 14:53:40,665 - INFO - Feature ' Average Packet Size' clipped between 0.00 and 1661.86
+2024-11-22 14:53:40,672 - INFO - Feature ' Avg Fwd Segment Size' clipped between 0.00 and 2321.40
+2024-11-22 14:53:40,678 - INFO - Feature ' Avg Bwd Segment Size' clipped between 0.00 and 2901.75
+2024-11-22 14:53:40,682 - INFO - Feature ' Fwd Header Length.1' clipped between 20.00 and 712.00
+2024-11-22 14:53:40,686 - INFO - Feature 'Fwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,689 - INFO - Feature ' Fwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,692 - INFO - Feature ' Fwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,696 - INFO - Feature ' Bwd Avg Bytes/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,698 - INFO - Feature ' Bwd Avg Packets/Bulk' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,701 - INFO - Feature 'Bwd Avg Bulk Rate' clipped between 0.00 and 0.00
+2024-11-22 14:53:40,705 - INFO - Feature 'Subflow Fwd Packets' clipped between 1.00 and 27.00
+2024-11-22 14:53:40,709 - INFO - Feature ' Subflow Fwd Bytes' clipped between 0.00 and 11613.00
+2024-11-22 14:53:40,714 - INFO - Feature ' Subflow Bwd Packets' clipped between 0.00 and 29.00
+2024-11-22 14:53:40,721 - INFO - Feature ' Subflow Bwd Bytes' clipped between 0.00 and 17432.56
+2024-11-22 14:53:40,724 - INFO - Feature 'Init_Win_bytes_forward' clipped between -1.00 and 30228.00
+2024-11-22 14:53:40,728 - INFO - Feature ' Init_Win_bytes_backward' clipped between -1.00 and 16563.92
+2024-11-22 14:53:40,733 - INFO - Feature ' act_data_pkt_fwd' clipped between 0.00 and 21.00
+2024-11-22 14:53:40,736 - INFO - Feature ' min_seg_size_forward' clipped between 20.00 and 40.00
+2024-11-22 14:53:40,744 - INFO - Feature 'Active Mean' clipped between 0.00 and 4134663.08
+2024-11-22 14:53:40,750 - INFO - Feature ' Active Std' clipped between 0.00 and 248292.49
+2024-11-22 14:53:40,757 - INFO - Feature ' Active Max' clipped between 0.00 and 4205998.64
+2024-11-22 14:53:40,763 - INFO - Feature ' Active Min' clipped between 0.00 and 4125898.88
+2024-11-22 14:53:40,770 - INFO - Feature 'Idle Mean' clipped between 0.00 and 93956000.00
+2024-11-22 14:53:40,776 - INFO - Feature ' Idle Std' clipped between 0.00 and 57100000.00
+2024-11-22 14:53:40,780 - INFO - Feature ' Idle Max' clipped between 0.00 and 94700000.00
+2024-11-22 14:53:40,788 - INFO - Feature ' Idle Min' clipped between 0.00 and 93956000.00
+2024-11-22 14:53:40,899 - INFO - Starting hyperparameter search...
+2024-11-22 14:55:11,357 - INFO - Starting model training process...
+2024-11-22 14:55:11,358 - INFO - Loading dataset...
+2024-11-22 14:55:11,976 - INFO - Dataset shape: (225745, 79)
+2024-11-22 14:55:11,977 - INFO - Initial number of features: 78
+2024-11-22 14:55:11,977 - INFO - 
+Preprocessing data...
+2024-11-22 14:55:12,425 - INFO - Starting hyperparameter search...
+2024-11-22 14:57:25,439 - INFO - Starting model training process...
+2024-11-22 14:57:25,439 - INFO - Loading dataset...
+2024-11-22 14:57:26,147 - INFO - Dataset shape: (225745, 79)
+2024-11-22 14:57:26,147 - INFO - Initial number of features: 78
+2024-11-22 14:57:26,147 - INFO - 
+Preprocessing data...
+2024-11-22 14:57:26,413 - INFO - 
+Features after variance threshold: 65
+2024-11-22 14:57:35,806 - INFO - Features after feature selection: 33
+2024-11-22 15:00:35,351 - INFO - Starting model training process...
+2024-11-22 15:00:35,352 - INFO - Loading dataset...
+2024-11-22 15:00:36,033 - INFO - Dataset shape: (225745, 79)
+2024-11-22 15:00:36,034 - INFO - Initial number of features: 78
+2024-11-22 15:00:36,034 - INFO - 
+Preprocessing data...
+2024-11-22 15:00:36,296 - INFO - 
+Features after variance threshold: 65
+2024-11-22 15:00:45,559 - INFO - Features after feature selection: 33
+2024-11-22 15:01:33,473 - INFO - Starting model training process...
+2024-11-22 15:01:33,473 - INFO - Loading dataset...
+2024-11-22 15:01:34,115 - INFO - Dataset shape: (225745, 79)
+2024-11-22 15:01:34,115 - INFO - Initial number of features: 78
+2024-11-22 15:01:34,115 - INFO - 
+Preprocessing data...
+2024-11-22 15:01:34,380 - INFO - 
+Features after variance threshold: 65
+2024-11-22 15:01:43,895 - INFO - Features after feature selection: 33
+2024-11-22 15:01:43,896 - INFO - 
+Top 10 most important features:
+2024-11-22 15:01:43,897 - INFO - -  Bwd Packet Length Min: 0.1159
+2024-11-22 15:01:43,897 - INFO - -  Fwd Packet Length Mean: 0.0958
+2024-11-22 15:01:43,897 - INFO - -  Total Length of Bwd Packets: 0.0796
+2024-11-22 15:01:43,897 - INFO - -  Total Backward Packets: 0.0417
+2024-11-22 15:01:43,897 - INFO - -  Destination Port: 0.0404
+2024-11-22 15:01:43,897 - INFO - - Fwd IAT Total: 0.0365
+2024-11-22 15:01:43,897 - INFO - -  URG Flag Count: 0.0338
+2024-11-22 15:01:43,897 - INFO - - Init_Win_bytes_forward: 0.0272
+2024-11-22 15:01:43,897 - INFO - -  Packet Length Mean: 0.0245
+2024-11-22 15:01:43,897 - INFO - -  Average Packet Size: 0.0229
+2024-11-22 15:01:43,897 - INFO - 
+Starting hyperparameter search...
+2024-11-22 15:03:33,332 - INFO - Starting model training process...
+2024-11-22 15:03:33,332 - INFO - Loading dataset...
+2024-11-22 15:03:33,936 - INFO - Dataset shape: (225745, 79)
+2024-11-22 15:03:33,936 - INFO - Initial number of features: 78
+2024-11-22 15:03:33,936 - INFO - 
+Preprocessing data...
+2024-11-22 15:03:34,151 - INFO - 
+Features after variance threshold: 65
+2024-11-22 15:03:43,397 - INFO - Features after feature selection: 33
+2024-11-22 15:03:43,397 - INFO - 
+Top 10 most important features:
+2024-11-22 15:03:43,397 - INFO - -  Bwd Packet Length Min: 0.1159
+2024-11-22 15:03:43,398 - INFO - -  Fwd Packet Length Mean: 0.0958
+2024-11-22 15:03:43,398 - INFO - -  Total Length of Bwd Packets: 0.0796
+2024-11-22 15:03:43,398 - INFO - -  Total Backward Packets: 0.0417
+2024-11-22 15:03:43,398 - INFO - -  Destination Port: 0.0404
+2024-11-22 15:03:43,398 - INFO - - Fwd IAT Total: 0.0365
+2024-11-22 15:03:43,398 - INFO - -  URG Flag Count: 0.0338
+2024-11-22 15:03:43,398 - INFO - - Init_Win_bytes_forward: 0.0272
+2024-11-22 15:03:43,398 - INFO - -  Packet Length Mean: 0.0245
+2024-11-22 15:03:43,398 - INFO - -  Average Packet Size: 0.0229
+2024-11-22 15:03:43,398 - INFO - 
+Starting hyperparameter search...
+2024-11-23 10:53:47,276 - INFO - Loading dataset...
+2024-11-23 10:53:48,311 - INFO - Initial dataset shape: (225745, 79)
+2024-11-23 10:53:48,311 - INFO - 
+Class distribution:
+2024-11-23 10:53:48,330 - INFO -  Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-23 10:53:48,591 - INFO - Dataset splits:
+2024-11-23 10:53:48,591 - INFO - Training set size: 153506
+2024-11-23 10:53:48,591 - INFO - Validation set size: 38377
+2024-11-23 10:53:48,591 - INFO - Holdout set size: 33862
+2024-11-23 10:56:49,865 - INFO - Loading dataset...
+2024-11-23 10:56:50,445 - INFO - Initial dataset shape: (225745, 79)
+2024-11-23 10:56:50,445 - INFO - 
+Class distribution:
+2024-11-23 10:56:50,453 - INFO -  Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-23 10:56:50,515 - INFO - 
+Handling infinite and missing values...
+2024-11-23 10:56:50,554 - INFO - Columns with infinite values:
+2024-11-23 10:56:50,554 - INFO - - Flow Bytes/s
+2024-11-23 10:56:50,554 - INFO - -  Flow Packets/s
+2024-11-23 10:56:50,554 - INFO - Columns with missing values:
+2024-11-23 10:56:50,554 - INFO - - Flow Bytes/s
+2024-11-23 10:56:50,554 - INFO - -  Flow Packets/s
+2024-11-23 10:56:50,692 - INFO - Dataset splits:
+2024-11-23 10:56:50,692 - INFO - Training set size: 153506
+2024-11-23 10:56:50,692 - INFO - Validation set size: 38377
+2024-11-23 10:56:50,692 - INFO - Holdout set size: 33862
+2024-11-23 10:56:50,695 - INFO - 
+Training model...
+2024-11-23 11:23:16,456 - INFO - 
+Best parameters found:
+2024-11-23 11:23:16,457 - INFO - {'classifier__n_estimators': 100, 'classifier__min_samples_split': 5, 'classifier__min_samples_leaf': 1, 'classifier__max_features': 'sqrt', 'classifier__max_depth': None, 'classifier__class_weight': 'balanced'}
+2024-11-23 11:23:16,457 - INFO - 
+Evaluating model performance on all sets:
+2024-11-23 11:23:17,018 - INFO - 
+Training Set Metrics:
+2024-11-23 11:23:17,018 - INFO - Accuracy: 1.0000
+2024-11-23 11:23:17,018 - INFO - Precision: 1.0000
+2024-11-23 11:23:17,018 - INFO - Recall: 1.0000
+2024-11-23 11:23:17,018 - INFO - F1 Score: 1.0000
+2024-11-23 11:23:17,018 - INFO - ROC AUC: 1.0000
+2024-11-23 11:23:17,440 - INFO - 
+Validation Set Metrics:
+2024-11-23 11:23:17,440 - INFO - Accuracy: 0.9999
+2024-11-23 11:23:17,440 - INFO - Precision: 1.0000
+2024-11-23 11:23:17,440 - INFO - Recall: 0.9998
+2024-11-23 11:23:17,440 - INFO - F1 Score: 0.9999
+2024-11-23 11:23:17,440 - INFO - ROC AUC: 1.0000
+2024-11-23 11:23:17,672 - INFO - 
+Holdout Set Metrics:
+2024-11-23 11:23:17,672 - INFO - Accuracy: 0.9999
+2024-11-23 11:23:17,672 - INFO - Precision: 0.9999
+2024-11-23 11:23:17,672 - INFO - Recall: 0.9999
+2024-11-23 11:23:17,672 - INFO - F1 Score: 0.9999
+2024-11-23 11:23:17,672 - INFO - ROC AUC: 1.0000
+2024-11-23 11:23:17,738 - INFO - 
+F1 Score Comparison:
+2024-11-23 11:23:17,738 - INFO - Training F1 Score: 1.0000
+2024-11-23 11:23:17,738 - INFO - Validation F1 Score: 0.9999
+2024-11-23 11:23:17,738 - INFO - Holdout F1 Score: 0.9999
+2024-11-23 11:23:17,754 - INFO - 
+Top 10 most important features:
+2024-11-23 11:23:17,754 - INFO -  CWE Flag Count: 0.1195
+2024-11-23 11:23:17,754 - INFO -  Fwd Packet Length Max: 0.1110
+2024-11-23 11:23:17,754 - INFO -  Fwd Packet Length Mean: 0.0977
+2024-11-23 11:23:17,754 - INFO - Total Length of Fwd Packets: 0.0728
+2024-11-23 11:23:17,754 - INFO -  Fwd Avg Bulk Rate: 0.0521
+2024-11-23 11:23:17,754 - INFO -  Down/Up Ratio: 0.0437
+2024-11-23 11:23:17,754 - INFO - Fwd Avg Bytes/Bulk: 0.0425
+2024-11-23 11:23:17,754 - INFO -  Bwd Packet Length Mean: 0.0419
+2024-11-23 11:23:17,754 - INFO -  Bwd Packet Length Std: 0.0381
+2024-11-23 11:23:17,754 - INFO -  Avg Fwd Segment Size: 0.0378
+2024-11-23 11:23:17,789 - INFO - 
+Model and metadata saved as 'model_with_metadata.joblib'
+2024-11-23 11:31:57,577 - INFO - Loading dataset...
+2024-11-23 11:31:58,219 - INFO - Initial dataset shape: (225745, 79)
+2024-11-23 11:31:58,219 - INFO - 
+Class distribution:
+2024-11-23 11:31:58,230 - INFO -  Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-23 11:31:58,289 - INFO - 
+Handling infinite and missing values...
+2024-11-23 11:31:58,358 - INFO - Columns with infinite values:
+2024-11-23 11:31:58,358 - INFO - - Flow Bytes/s
+2024-11-23 11:31:58,358 - INFO - -  Flow Packets/s
+2024-11-23 11:31:58,359 - INFO - Columns with missing values:
+2024-11-23 11:31:58,359 - INFO - - Flow Bytes/s
+2024-11-23 11:31:58,359 - INFO - -  Flow Packets/s
+2024-11-23 11:31:58,519 - INFO - Dataset splits:
+2024-11-23 11:31:58,520 - INFO - Training set size: 153506
+2024-11-23 11:31:58,520 - INFO - Validation set size: 38377
+2024-11-23 11:31:58,520 - INFO - Holdout set size: 33862
+2024-11-23 11:31:58,522 - INFO - 
+Training model...
+2024-11-23 11:32:00,658 - INFO - Loading dataset...
+2024-11-23 11:32:01,270 - INFO - Initial dataset shape: (225745, 79)
+2024-11-23 11:32:01,270 - INFO - 
+Class distribution:
+2024-11-23 11:32:01,278 - INFO -  Label
+DDoS      128027
+BENIGN     97718
+Name: count, dtype: int64
+2024-11-23 11:32:01,333 - INFO - 
+Handling infinite and missing values...
+2024-11-23 11:32:01,368 - INFO - Columns with infinite values:
+2024-11-23 11:32:01,368 - INFO - - Flow Bytes/s
+2024-11-23 11:32:01,368 - INFO - -  Flow Packets/s
+2024-11-23 11:32:01,368 - INFO - Columns with missing values:
+2024-11-23 11:32:01,368 - INFO - - Flow Bytes/s
+2024-11-23 11:32:01,368 - INFO - -  Flow Packets/s
+2024-11-23 11:32:01,510 - INFO - Dataset splits:
+2024-11-23 11:32:01,510 - INFO - Training set size: 153506
+2024-11-23 11:32:01,510 - INFO - Validation set size: 38377
+2024-11-23 11:32:01,510 - INFO - Holdout set size: 33862
+2024-11-23 11:32:01,512 - INFO - 
+Training model...
+2024-11-23 12:12:44,147 - INFO - 
+Best parameters found:
+2024-11-23 12:12:44,147 - INFO - {'classifier__n_estimators': 200, 'classifier__min_samples_split': 5, 'classifier__min_samples_leaf': 1, 'classifier__max_features': 'log2', 'classifier__max_depth': 20, 'classifier__class_weight': 'balanced_subsample'}
+2024-11-23 12:12:44,147 - INFO - 
+Evaluating model performance on all sets:
+2024-11-23 12:12:44,805 - INFO - 
+Training Set Metrics:
+2024-11-23 12:12:44,806 - INFO - Accuracy: 1.0000
+2024-11-23 12:12:44,806 - INFO - Precision: 1.0000
+2024-11-23 12:12:44,806 - INFO - Recall: 1.0000
+2024-11-23 12:12:44,806 - INFO - F1 Score: 1.0000
+2024-11-23 12:12:44,806 - INFO - ROC AUC: 1.0000
+2024-11-23 12:12:45,250 - INFO - 
+Validation Set Metrics:
+2024-11-23 12:12:45,250 - INFO - Accuracy: 0.9999
+2024-11-23 12:12:45,250 - INFO - Precision: 1.0000
+2024-11-23 12:12:45,250 - INFO - Recall: 0.9998
+2024-11-23 12:12:45,250 - INFO - F1 Score: 0.9999
+2024-11-23 12:12:45,250 - INFO - ROC AUC: 1.0000
+2024-11-23 12:12:45,537 - INFO - 
+Holdout Set Metrics:
+2024-11-23 12:12:45,537 - INFO - Accuracy: 0.9999
+2024-11-23 12:12:45,537 - INFO - Precision: 0.9999
+2024-11-23 12:12:45,537 - INFO - Recall: 0.9999
+2024-11-23 12:12:45,537 - INFO - F1 Score: 0.9999
+2024-11-23 12:12:45,537 - INFO - ROC AUC: 1.0000
+2024-11-23 12:12:45,603 - INFO - 
+F1 Score Comparison:
+2024-11-23 12:12:45,603 - INFO - Training F1 Score: 1.0000
+2024-11-23 12:12:45,603 - INFO - Validation F1 Score: 0.9999
+2024-11-23 12:12:45,603 - INFO - Holdout F1 Score: 0.9999
+2024-11-23 12:12:45,620 - INFO - 
+Top 10 most important features:
+2024-11-23 12:12:45,620 - INFO -  Fwd Packet Length Max: 0.1037
+2024-11-23 12:12:45,620 - INFO -  CWE Flag Count: 0.1000
+2024-11-23 12:12:45,620 - INFO -  Fwd Packet Length Mean: 0.0965
+2024-11-23 12:12:45,620 - INFO -  Fwd Avg Bulk Rate: 0.0703
+2024-11-23 12:12:45,620 - INFO - Total Length of Fwd Packets: 0.0633
+2024-11-23 12:12:45,620 - INFO -  Avg Fwd Segment Size: 0.0491
+2024-11-23 12:12:45,620 - INFO - Fwd Avg Bytes/Bulk: 0.0472
+2024-11-23 12:12:45,620 - INFO -  Bwd Packet Length Mean: 0.0456
+2024-11-23 12:12:45,620 - INFO -  Bwd PSH Flags: 0.0356
+2024-11-23 12:12:45,620 - INFO - Bwd Packet Length Max: 0.0336
+2024-11-23 12:12:45,668 - INFO - 
+Model and metadata saved as 'model_with_metadata.joblib'
